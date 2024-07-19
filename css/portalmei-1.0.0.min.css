@@ -1144,11 +1144,11 @@
   text-align: center;
   padding-top: 50px;
   padding-bottom: 50px;
-  background-image: url('/portal-mei/dist/img/background-section.png');
+  background-image: url('/portal-mei/img/background-section.png');
 }
 @media (max-width: 1023px) {
   .pricing {
-    background-image: url('/portal-mei/dist/img/bg-mobile-section.png');
+    background-image: url('/portal-mei/img/bg-mobile-section.png');
   }
 }
 .pricing__title {
