@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portal Mei</title>
+  <link rel="stylesheet" href="./css/reset.css">
+  <link href="./css/portalmei-1.0.0.min.css" rel="stylesheet">
+</head>
+
+
+<body class="register">
+  <header class="header container flex flex--between flex--middle ">
+    <a class="header__logo flex flex--middle" href="/" title="Logotipo da Associação Comercial de São Paulo">
+      <svg xmlns="http://www.w3.org/2000/svg" width="161" height="28" viewBox="0 0 161 28" fill="none">
+        <path
+          d="M24.3808 0.907976L30.156 2.84222C30.4705 2.95592 30.7439 3.17193 30.9375 3.45975C31.1311 3.74757 31.2355 4.09289 31.2355 4.44688V23.8866C31.2343 24.2556 31.1217 24.6145 30.9116 24.9084C30.7028 25.2023 30.4083 25.4153 30.075 25.5149L24.2999 27.1195C24.064 27.1899 23.8165 27.2011 23.5759 27.1524C23.3354 27.1037 23.1078 26.9963 22.913 26.8386C22.717 26.6811 22.5586 26.4774 22.4495 26.2436C22.3404 26.0099 22.2829 25.7524 22.2829 25.4913V2.50876C22.2829 2.23983 22.3439 1.97489 22.4589 1.73588C22.5739 1.49676 22.7417 1.29048 22.947 1.13396C23.1512 0.977555 23.3882 0.875357 23.6381 0.83605C23.888 0.796743 24.1427 0.821384 24.3808 0.907976Z"
+          fill="#FEC654" />
+        <path
+          d="M13.1771 3.51317L18.9558 5.44741C19.2703 5.56123 19.5437 5.77712 19.7373 6.06494C19.9309 6.35288 20.0341 6.69808 20.0341 7.05207V21.7887C20.0341 22.1578 19.9203 22.5166 19.7114 22.8105C19.5026 23.1044 19.2081 23.3174 18.8749 23.417L13.0997 25.0216C12.8638 25.092 12.6163 25.1033 12.3757 25.0546C12.134 25.0058 11.9076 24.8984 11.7128 24.7407C11.5168 24.5832 11.3585 24.3795 11.2493 24.1457C11.1402 23.912 11.0827 23.6546 11.0827 23.3934V5.11782C11.0815 4.84901 11.1414 4.58396 11.2564 4.34459C11.3714 4.10523 11.538 3.89849 11.7433 3.74161C11.9475 3.58462 12.1845 3.48207 12.4344 3.44241C12.6831 3.40264 12.9378 3.42692 13.1771 3.51317Z"
+          fill="#E9655F" />
+        <path
+          d="M2.59796 4.79197L8.37313 6.72634C8.68758 6.84003 8.96097 7.05605 9.15457 7.34387C9.34817 7.63169 9.45141 7.97688 9.45141 8.331V20.1289C9.45141 20.4979 9.33761 20.8567 9.12875 21.1507C8.91873 21.4446 8.62539 21.6575 8.29217 21.7572L2.517 23.3618C2.28116 23.4322 2.03239 23.4435 1.79186 23.3948C1.55133 23.346 1.32489 23.2386 1.12894 23.081C0.934165 22.9233 0.775749 22.7196 0.666629 22.4859C0.557509 22.2522 0.500017 21.9948 0.500017 21.7336V6.39675C0.498844 6.12758 0.558686 5.86229 0.674847 5.6227C0.789834 5.38322 0.956458 5.17636 1.16179 5.01948C1.36713 4.86261 1.60414 4.76006 1.85406 4.72052C2.10398 4.68097 2.3586 4.7055 2.59796 4.79197Z"
+          fill="#58C5C6" />
+        <path
+          d="M47.5929 10.8108C47.5929 12.3801 47.0919 13.5847 46.0911 14.4242C45.0902 15.2613 43.6716 15.6798 41.8354 15.6798H39.4805V22.3928H38.4163V6.14185H42.1486C45.7778 6.14185 47.5929 7.69816 47.5929 10.8108ZM41.5749 14.7029C43.2903 14.7029 44.5341 14.4007 45.2956 13.7965C46.0582 13.1923 46.4442 12.2114 46.4442 10.8578C46.4442 9.60625 46.0829 8.67766 45.3589 8.0721C44.6373 7.46795 43.5144 7.16582 42.002 7.16582H39.477V14.7029H41.5749Z"
+          fill="#060E13" />
+        <path
+          d="M59.6812 16.3349C59.6812 18.3046 59.233 19.8439 58.3378 20.953C57.4425 22.062 56.2035 22.6165 54.6242 22.6165C53.6972 22.6362 52.7844 22.3706 51.9959 21.8514C51.2203 21.3209 50.6137 20.5533 50.2546 19.6491C49.8346 18.6038 49.6281 17.4748 49.6504 16.3378C49.6504 14.3682 50.0986 12.8328 50.9939 11.7316C51.455 11.1801 52.0264 10.7455 52.6647 10.4597C53.303 10.1739 53.9941 10.0441 54.6863 10.0798C56.2434 10.0798 57.4648 10.637 58.3519 11.7512C59.2389 12.8655 59.6824 14.3934 59.6812 16.3349ZM50.7334 16.3349C50.7334 17.9946 51.0748 19.2894 51.76 20.2193C52.1238 20.6582 52.5708 21.0099 53.0706 21.2506C53.5717 21.4915 54.1149 21.616 54.664 21.616C55.2132 21.616 55.7564 21.4915 56.2574 21.2506C56.7585 21.0099 57.2043 20.6582 57.5681 20.2193C58.2533 19.2894 58.5947 17.9946 58.5947 16.3349C58.5947 14.6675 58.2498 13.374 57.5575 12.4547C57.2067 11.9972 56.7608 11.6342 56.2539 11.395C55.747 11.1557 55.1956 11.0469 54.6418 11.0776C54.0926 11.0455 53.5435 11.1534 53.0401 11.3921C52.5368 11.6309 52.0944 11.9937 51.7483 12.4507C51.0713 13.3649 50.7334 14.6596 50.7334 16.3349Z"
+          fill="#060E13" />
+        <path
+          d="M66.9394 10.0759C67.4568 10.0791 67.9731 10.1316 68.4823 10.2328L68.2828 11.2882C67.8029 11.1617 67.3101 11.0985 66.815 11.0999C66.348 11.0941 65.8869 11.2106 65.4727 11.4391C65.0573 11.6676 64.7018 12.0011 64.4366 12.4104C63.7925 13.3743 63.4663 14.5389 63.5097 15.7218V22.3917H62.4783V10.3113H63.3548L63.4581 12.4889H63.5308C63.877 11.7445 64.3897 11.102 65.0221 10.6173C65.5982 10.2424 66.2647 10.0543 66.9394 10.0759Z"
+          fill="#060E13" />
+        <path
+          d="M73.4408 21.6355C74.0157 21.6437 74.5894 21.5844 75.1515 21.4589V22.3496C74.5918 22.5361 74.0086 22.6261 73.422 22.6164C72.4211 22.6164 71.6819 22.3312 71.2055 21.761C70.7303 21.1908 70.4922 20.2936 70.4922 19.0695V11.2657H68.8131V10.6223L70.4922 10.1201L71.0143 7.38538H71.5482V10.3084H74.8757V11.2657H71.5482V18.9126C71.4989 19.6321 71.6596 20.3504 72.0081 20.9685C72.1759 21.1979 72.3953 21.3792 72.6452 21.4957C72.8951 21.6121 73.1685 21.6602 73.4408 21.6355Z"
+          fill="#060E13" />
+        <path
+          d="M84.1407 22.3928L83.879 20.4821H83.7945C83.3299 21.1627 82.7303 21.7266 82.0392 22.1338C81.3739 22.4705 80.6441 22.6358 79.9073 22.6164C78.9651 22.6788 78.0358 22.353 77.313 21.7063C76.9974 21.3812 76.751 20.9877 76.5914 20.5524C76.4318 20.1171 76.3614 19.6502 76.3849 19.1835C76.3685 18.6368 76.4881 18.0952 76.7299 17.6132C76.9727 17.1311 77.3294 16.7254 77.7659 16.437C78.6858 15.7857 80.0187 15.4417 81.7635 15.4051L83.9201 15.3384V14.538C83.9201 13.3885 83.7018 12.5214 83.2654 11.9368C82.8277 11.3521 82.1225 11.0588 81.1487 11.0567C80.0046 11.082 78.8853 11.4025 77.8832 11.9906L77.4972 11.0332C78.6471 10.4333 79.9084 10.1143 81.1885 10.0994C82.4335 10.0994 83.3627 10.4434 83.9787 11.1313C84.5948 11.8191 84.9033 12.8943 84.9033 14.3564V22.3916L84.1407 22.3928ZM79.9706 21.616C80.4928 21.6463 81.0161 21.5639 81.5077 21.3739C82.0005 21.1838 82.451 20.8899 82.8336 20.5096C83.534 19.7719 83.8837 18.7479 83.8837 17.4374V16.2487L81.9031 16.3389C80.3085 16.4213 79.1751 16.6841 78.4981 17.1354C78.166 17.3533 77.8961 17.6635 77.7178 18.0327C77.5383 18.4018 77.4573 18.8159 77.482 19.2305C77.4644 19.5569 77.5137 19.8836 77.6263 20.1878C77.7389 20.492 77.9114 20.7665 78.1332 20.9922C78.6518 21.4372 79.3065 21.6598 79.9706 21.616Z"
+          fill="#060E13" />
+        <path d="M89.2645 22.3928H88.2332V5.09802H89.2645V22.3928Z" fill="#060E13" />
+        <path
+          d="M102.073 10.0758C102.808 10.0568 103.537 10.2207 104.201 10.5544C104.862 10.9368 105.416 11.5002 105.806 12.1866H105.868C105.828 11.2529 105.807 10.3373 105.806 9.4402V5.09802H106.829V22.3928H106.152L105.89 20.5488H105.806C105.412 21.2101 104.86 21.7492 104.209 22.112C103.557 22.4749 102.827 22.6489 102.092 22.6164C100.527 22.6164 99.3313 22.0972 98.5029 21.0588C97.6745 20.0204 97.2615 18.5086 97.2627 16.5233C97.2627 14.432 97.6722 12.8351 98.4924 11.7327C99.3219 10.6302 100.515 10.0779 102.073 10.0758ZM102.073 11.0763C100.837 11.0763 99.9062 11.5393 99.2832 12.4652C98.6602 13.3912 98.348 14.7356 98.348 16.4985C98.348 19.925 99.5965 21.6369 102.092 21.6344C103.369 21.6344 104.307 21.2381 104.908 20.4455C105.508 19.6531 105.807 18.3451 105.806 16.5221V16.3338C105.806 14.4662 105.512 13.1231 104.926 12.3043C104.34 11.4854 103.388 11.0775 102.073 11.0775V11.0763Z"
+          fill="#060E13" />
+        <path
+          d="M119.668 16.3349C119.668 18.3046 119.221 19.8439 118.325 20.953C117.43 22.062 116.192 22.6165 114.611 22.6165C113.684 22.6362 112.771 22.3706 111.983 21.8514C111.209 21.3209 110.601 20.5533 110.242 19.6491C109.822 18.6038 109.616 17.4748 109.639 16.3378C109.639 14.3682 110.087 12.8328 110.982 11.7316C111.443 11.1801 112.013 10.7455 112.652 10.4597C113.291 10.1739 113.982 10.0441 114.673 10.0798C116.23 10.0798 117.453 10.637 118.34 11.7512C119.227 12.8655 119.669 14.3934 119.668 16.3349ZM110.724 16.3349C110.724 17.9946 111.067 19.2894 111.752 20.2193C112.114 20.6582 112.561 21.0099 113.062 21.2506C113.563 21.4915 114.107 21.616 114.656 21.616C115.205 21.616 115.748 21.4915 116.248 21.2506C116.749 21.0099 117.196 20.6582 117.56 20.2193C118.244 19.2894 118.586 17.9946 118.586 16.3349C118.586 14.6675 118.24 13.374 117.548 12.4547C117.198 11.9972 116.751 11.6342 116.246 11.395C115.739 11.1557 115.186 11.0469 114.634 11.0776C114.083 11.0455 113.534 11.1534 113.032 11.3921C112.529 11.6309 112.086 11.9937 111.74 12.4507C111.063 13.3649 110.724 14.6596 110.724 16.3349Z"
+          fill="#060E13" />
+        <path
+          d="M134.377 22.3928L129.957 8.82034H129.872C129.99 10.8371 130.048 12.7269 130.048 14.4898V22.3916H127.785V6.14185H131.3L135.533 19.0697H135.596L139.954 6.14185H143.48V22.3928H141.08V14.3576C141.08 13.5494 141.1 12.4965 141.139 11.1992C141.176 9.90439 141.209 9.11579 141.239 8.84111H141.154L136.575 22.3889H134.377V22.3928Z"
+          fill="#060E13" />
+        <path
+          d="M155.417 22.3928H146.793V6.14185H155.417V8.38597H149.284V12.8117H155.03V15.0363H149.284V20.1368H155.417V22.3928Z"
+          fill="#060E13" />
+        <path d="M158.009 22.3928V6.14185H160.5V22.3928H158.009Z" fill="#060E13" />
+      </svg>
+    </a>
+    <nav class="header__nav" aria-label="Menu principal">
+      <button class="menu__mobile-button  js-toggle-menu">
+        <svg xmlns="http://www.w3.org/2000/svg" width="49" height="48" viewBox="0 0 49 48" fill="none">
+          <path
+            d="M8.68945 36H40.6895C41.7895 36 42.6895 35.1 42.6895 34C42.6895 32.9 41.7895 32 40.6895 32H8.68945C7.58945 32 6.68945 32.9 6.68945 34C6.68945 35.1 7.58945 36 8.68945 36ZM8.68945 26H40.6895C41.7895 26 42.6895 25.1 42.6895 24C42.6895 22.9 41.7895 22 40.6895 22H8.68945C7.58945 22 6.68945 22.9 6.68945 24C6.68945 25.1 7.58945 26 8.68945 26ZM6.68945 14C6.68945 15.1 7.58945 16 8.68945 16H40.6895C41.7895 16 42.6895 15.1 42.6895 14C42.6895 12.9 41.7895 12 40.6895 12H8.68945C7.58945 12 6.68945 12.9 6.68945 14Z"
+            fill="#002C43" />
+        </svg>
+      </button>
+      <ul class="menu__nav-list flex flex--center">
+        <li class="menu__nav-item">
+          <a href="/quem-somos.html" class="menu__nav-link ">Quem somos</a>
+        </li>
+        <li class="menu__nav-item">
+          <a href="/servicos.html" class="menu__nav-link menu__nav-link--sublist">Serviços</a>
+          <ul class="menu__sublist">
+            <li class="menu__subitem">
+              <a href="/emissao-das.html" class="menu__sublink">Emissão DAS</a>
+            </li>
+            <li class="menu__subitem">
+              <a href="/nf-servico.html" class="menu__sublink">NF de serviço</a>
+            </li>
+            <li class="menu__subitem">
+              <a href="/nf-produto.html" class="menu__sublink">NF de produto</a>
+            </li>
+            <li class="menu__subitem">
+              <a href="/fincancas-mei.html" class="menu__sublink">Finanças MEI</a>
+            </li>
+            <li class="menu__subitem">
+              <a href="/declaracao-das.html" class="menu__sublink">Declaração DASN</a>
+            </li>
+            <li class="menu__subitem">
+              <a href="#" class="menu__sublink">Contabilidade</a>
+            </li>
+            <li class="menu__subitem">
+              <a href="/servicos-adicionais.html" class="menu__sublink">Serviços adicionais</a>
+            </li>
+          </ul>
+        </li>
+        <li class="menu__nav-item">
+          <a href="/blog.html" class="menu__nav-link">Blog</a>
+        </li>
+        <li class="menu__nav-item">
+          <a href="/faq.html" class="menu__nav-link">Dúvidas</a>
+        </li>
+        <li class="menu__nav-item">
+          <a href="/contato.html" class="menu__nav-link">Contato</a>
+        </li>
+        <li class="menu__nav-item menu__nav-item--login">
+          <button class="menu__nav-link menu__nav-link--login flex flex--center js-toggle-login">
+            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" fill="none">
+              <g clip-path="url(#clip0_1616_63)">
+                <path
+                  d="M7.07082 4.71871L9.24029 6.89424H0.65332V8.10623H9.24029L7.06476 10.2818L7.92528 11.1362L11.5613 7.50024L7.92528 3.86426L7.07082 4.71871ZM12.1673 3.86426V11.1362H13.3792V3.86426H12.1673Z"
+                  fill="#0D4F70" />
+              </g>
+              <defs>
+                <clipPath id="clip0_1616_63">
+                  <rect width="14.5439" height="14.5439" fill="white" transform="translate(0.046875 0.228027)" />
+                </clipPath>
+              </defs>
+            </svg>
+            <span>Olá! Faça seu Login.</span>
+          </button>
+          <div class="login__content">
+            <button class="login__close js-toggle-login">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M2.3131 2.31307C2.50837 2.11781 2.82495 2.11781 3.02021 2.31307L13.6869 12.9797C13.8821 13.175 13.8821 13.4916 13.6869 13.6868C13.4916 13.8821 13.175 13.8821 12.9798 13.6868L2.3131 3.02018C2.11784 2.82492 2.11784 2.50833 2.3131 2.31307Z"
+                  fill="#002C43" />
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M13.6869 2.31307C13.8821 2.50833 13.8821 2.82492 13.6869 3.02018L3.02021 13.6868C2.82495 13.8821 2.50837 13.8821 2.3131 13.6868C2.11784 13.4916 2.11784 13.175 2.3131 12.9797L12.9798 2.31307C13.175 2.11781 13.4916 2.11781 13.6869 2.31307Z"
+                  fill="#002C43" />
+              </svg></button>
+            <span class="login__access flex flex--center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" fill="none">
+                <g clip-path="url(#clip0_1616_63)">
+                  <path
+                    d="M7.07082 4.71871L9.24029 6.89424H0.65332V8.10623H9.24029L7.06476 10.2818L7.92528 11.1362L11.5613 7.50024L7.92528 3.86426L7.07082 4.71871ZM12.1673 3.86426V11.1362H13.3792V3.86426H12.1673Z"
+                    fill="#0D4F70" />
+                </g>
+                <defs>
+                  <clipPath id="clip0_1616_63">
+                    <rect width="14.5439" height="14.5439" fill="white" transform="translate(0.046875 0.228027)" />
+                  </clipPath>
+                </defs>
+              </svg>
+              <span>Olá! Faça seu Login.</span>
+            </span>
+            <h3 class="login__title">Acesse o Portal</h3>
+            <form action="" class="login__form">
+              <label for="login" class="login__label">Login</label>
+              <input type="login" id="login" class="login__input">
+              <label for="password" class="login__label">Senha</label>
+              <input type="password" id="password" class="login__input">
+              <button class="button button--primary">Entrar</button>
+              <a href="#" class="login__forgot">Esqueci minha senha</a>
+              <a href="#" class="login__create">Criar uma conta</a>
+            </form>
+          </div>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main class="container flex flex--center ">
+    <aside>
+
+      <picture>
+        <source srcset="/portal-mei/dist/img/ja-sou-mei-mob.png" media="(max-width:968px)">
+        <source srcset="/portal-mei/dist/img/ja-sou-mei-desktop.png" media="(min-width:1024px)">
+        <img decoding="async" src="/portal-mei/dist/img/ja-sou-mei-desktop.png" alt="Banner" loading="lazy">
+      </picture>
+      <div class="register__text-img">
+        <h2 class="register__text-title register__text-title--secondary">Gestão fácil </br>do seu MEI </h2>
+        <ul>
+          <li> <span> Conclua seu cadastro. </span></li>
+          <li> <span> Acesse todas as funcionalidades. </span></li>
+          <li> <span> Conte com suporte online ou presencial. </span></li>
+          <li> <span> Emite NFs? Certificado Digital é obrigatório. </span></li>
+
+        </ul>
+      </div>
+
+
+    </aside>
+    <section class="register__main flex flex--column">
+      <nav class="register__nav">
+        <ul class="register__nav-list flex">
+          <li class="register__nav-item is-active">
+            <a href="#dados-pessoais" class="register__nav-button">
+              <i class="register__nav-icon">1</i>
+              <span>Dados Pessoais</span>
+            </a>
+          </li>
+          <li class="register__nav-item">
+            <a href="#senha" class="register__nav-button">
+              <i class="register__nav-icon">3</i>
+              <span>Senha</span>
+            </a>
+          </li>
+          <li class="register__nav-item">
+            <a href="#pagamento" class="register__nav-button">
+              <i class="register__nav-icon">4</i>
+              <span>Pagamento</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <article class="register__form ">
+
+        <form action="" data-navigation="dados-pessoais" class="register__form-action is-active">
+          <h2 class="register__title">Dados MEI</h2>
+
+          <label for="cpf">CNPJ ou CPF*</label>
+          <input class="register__input" type="text" id="cpf" name="cpf" required>
+
+
+          <label for="phone">Telefone*</label>
+          <input class="register__input" type="tel" id="phone" name="phone" required>
+
+
+          <label for="email">E-mail*</label>
+          <input class="register__input" type="email" id="email" name="email" required>
+
+          <div class="flex flex--end">
+            <button type="submit" class="register__submit button button--primary">Continuar
+
+          </div>
+        </form>
+
+        <form action="" data-navigation="endereço" class="register__form-action ">
+          <h2 class="register__title">Endereço que vai usar no seu CNPJ MEI</h2>
+
+          <label for="name">CEP*</label>
+          <input class="register__input" type="text" id="cep" name="cep" required>
+
+          <div class="register__group">
+
+            <div class="register__label">
+              <label for="cpf">Rua*</label>
+              <input class="register__input" type="text" id="rua" name="rua" required>
+            </div>
+
+            <div class="register__label register__label--number">
+              <label for="phone">Número*</label>
+              <input class="register__input register__input--number" type="number" id="número" name="número" required>
+
+            </div>
+          </div>
+
+          <label for="email">Complemento</label>
+          <input class="register__input" type="complemento" id="complemento" name="complemento">
+
+          <label for="cpf">Bairro*</label>
+          <input class="register__input" type="text" id="rua" name="rua" required>
+
+          <div class="register__group">
+
+
+            <div class="register__label register__label--state">
+              <label for="cpf">Estado*</label>
+              <select class="register__input" id="estado" name="estado" required>
+                <option value="">Selecionar</option>
+                <option value="AC">AC</option>
+                <option value="AL">AL</option>
+                <option value="AP">AP</option>
+                <option value="AM">AM</option>
+                <option value="BA">BA</option>
+                <option value="CE">CE</option>
+                <option value="DF">DF</option>
+                <option value="ES">ES</option>
+                <option value="GO">GO</option>
+                <option value="MA">MA</option>
+                <option value="MT">MT</option>
+                <option value="MS">MS</option>
+                <option value="MG">MG</option>
+                <option value="PA">PA</option>
+                <option value="PB">PB</option>
+                <option value="PR">PR</option>
+                <option value="PE">PE</option>
+                <option value="PI">PI</option>
+                <option value="RJ">RJ</option>
+                <option value="RN">RN</option>
+                <option value="RS">RS</option>
+                <option value="RO">RO</option>
+                <option value="RR">RR</option>
+                <option value="SC">SC</option>
+                <option value="SP">SP</option>
+                <option value="SE">SE</option>
+                <option value="TO">TO</option>
+              </select>
+
+
+            </div>
+
+            <div class="register__label register__label--city">
+              <label for="phone">Cidade*</label>
+              <select class="register__input" id="estado" name="estado" required>
+                <option value="">Selecionar</option>
+                <option value="AC">Acre</option>
+                <option value="AL">Alagoas</option>
+                <option value="AP">Amapá</option>
+                <option value="AM">Amazonas</option>
+                <option value="BA">Bahia</option>
+                <option value="CE">Ceará</option>
+                <option value="DF">Distrito Federal</option>
+                <option value="ES">Espírito Santo</option>
+                <option value="GO">Goiás</option>
+                <option value="MA">Maranhão</option>
+                <option value="MT">Mato Grosso</option>
+                <option value="MS">Mato Grosso do Sul</option>
+                <option value="MG">Minas Gerais</option>
+                <option value="PA">Pará</option>
+                <option value="PB">Paraíba</option>
+                <option value="PR">Paraná</option>
+                <option value="PE">Pernambuco</option>
+                <option value="PI">Piauí</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="RN">Rio Grande do Norte</option>
+                <option value="RS">Rio Grande do Sul</option>
+                <option value="RO">Rondônia</option>
+                <option value="RR">Roraima</option>
+                <option value="SC">Santa Catarina</option>
+                <option value="SP">São Paulo</option>
+                <option value="SE">Sergipe</option>
+                <option value="TO">Tocantins</option>
+              </select>
+
+            </div>
+          </div>
+
+          <div class="flex flex--end">
+            <button type="submit" class="register__submit button button--secondary">Voltar</button>
+            <button type="submit" class="register__submit button button--primary">Continuar
+
+          </div>
+        </form>
+
+        <form action="" data-navigation="senha" class="register__form-action">
+          <h2 class="register__title">Cadastre uma senha</h2>
+
+          <label for="password">Senha*</label>
+          <input class="register__input" type="password" id="password" name="password" required>
+
+          <label for="confirm_password">Confirmar senha*</label>
+          <input class="register__input" type="password" id="confirm_password" name="confirm_password" required>
+
+          <div class="register__label-group">
+            <label for="terms">
+              <input type="checkbox" id="terms" name="terms" required>
+              Li e aceito o Termo de uso e Política de Privacidade do Portal do MEI.
+            </label>
+            <label for="agreement">
+              <input type="checkbox" id="agreement" name="agreement" required>
+              Estou de acordo em me tornar um associado da categoria participante da ACSP.
+            </label>
+          </div>
+
+          <div class="flex flex--end">
+            <button type="submit" class="register__submit button button--secondary">Voltar</button>
+            <button type="submit" class="register__submit button button--primary">Continuar
+
+          </div>
+
+          </button>
+        </form>
+        <form action="" data-navigation="pagamento" class="register__form-action ">
+          <h2 class="register__title">Pagamento</h2>
+          <div class="register__label-group">
+            <label for="terms">
+              <input type="checkbox" id="terms" name="terms" required>
+              inserir checkout para pagamento
+            </label>
+          </div>
+
+          <div class="flex">
+            <button type="submit" class="register__submit button button--secondary">Voltar</button>
+            <button type="submit" class="register__submit button button--primary">Continuar
+
+          </div>
+          </button>
+        </form>
+      </article>
+    </section>
+  </main>
+
+  <script type="text/javascript" src="./js/portalmei-1.0.0.min.js"></script>
+</body>
+
+</html>
