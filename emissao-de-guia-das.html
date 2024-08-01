@@ -9,7 +9,7 @@
 <link href="./css/portalmei-1.0.0.min.css" rel="stylesheet"></head>
 
 
-<body>
+<body class="services-page">
   <header class="header container flex flex--between flex--middle ">
     <a class="header__logo flex flex--middle" href="/" title="Logotipo da Associação Comercial de São Paulo">
       <svg xmlns="http://www.w3.org/2000/svg" width="161" height="28" viewBox="0 0 161 28" fill="none">
@@ -208,7 +208,7 @@
               </span>
             </li>
           </ul>
-          <a class="button button--primary flex flex--middle flex--center">Cadastre-se agora</a>
+          <a href="./planos.html" class="button button--primary flex flex--middle flex--center">Cadastre-se agora</a>
         </div>
       </div>
     </section>
@@ -251,7 +251,7 @@
             </i>
             <h3 class="benefits__item-title">Emissão em
               poucos cliques </h3>
-            <p class="benefits__item-text">Acesse o site, vá para a seção Pagar imposto DAS e cliqueem Ver PDF. </p>
+            <p class="benefits__item-text">Acesse o site, vá para a seção Pagar imposto DAS e clique em Ver PDF. </p>
           </li>
           <li class="benefits__item">
             <i class="benefits__icon">
@@ -349,12 +349,12 @@
 
     <section class="pricing no-pricing">
       <div class="container">
-        <h2 class="pricing__subtitle">Ter um CNPJ MEI nunca foi tão fácil e rápido!</h2>
+        <h2 class="pricing__subtitle">Faça a emissão da sua guia DAS de maneira rápida!</h2>
         <div class="pricing__info flex flex--center flex--middle">
           <div class="pricing__content">
             <div class="pricing__box-text">
               <h2 class="pricing__content-title">
-                <strong>Crie seu MEI</strong> de forma rápida e fácil
+                <strong>Abra seu MEI!</strong> de maneira rápida!
               </h2>
               <span>
                 <ul>
@@ -368,13 +368,17 @@
             </div>
 
             <div class="pricing__content-description flex flex--middle ">
-              <img src="./img/model-1.png" alt="Imagem 1">
+              <picture>
+                <source srcset="./img/model-1.png" media="(max-width:968px)">
+                <source srcset="./img/quero-ser-mei-box.png" media="(min-width:1024px)"><img decoding="async"
+                  href="./img/quero-ser-mei-box.png" alt="Banner" loading="lazy">
+              </picture>
             </div>
           </div>
           <div class="pricing__content pricing__content--invert">
             <div class="pricing__box-text">
               <h2 class="pricing__content-title">
-                <strong>Já tem MEI? </strong> simplifique sua vida
+                <strong>Já tem MEI? </strong> simplifique seu dia a dia
               </h2>
               <span>
                 <ul>
@@ -387,7 +391,11 @@
               </span>
             </div>
             <div class="pricing__content-description flex flex--middle flex--row-reverse">
-              <img src="./img/model-2.png" alt="Imagem 2" />
+              <picture>
+                <source srcset="./img/model-2.png" media="(max-width:968px)">
+                <source srcset="./img/ja-tem-mei-box.png" media="(min-width:1024px)"><img decoding="async"
+                  href="./img/ja-tem-mei-box.png" alt="Banner" loading="lazy">
+              </picture>
             </div>
           </div>
 
