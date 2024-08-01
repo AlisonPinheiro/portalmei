@@ -176,123 +176,277 @@
     </nav>
   </header>
   <main>
-    <section class="contact-form">
-      <h2 class="contact-form__title">Fale com a gente</h2>
-      <p class="contact-form__description">Preencha os campos abaixo com sua dúvida, comentário ou solicitação que nossa
-        equipe entrará em contato o mais breve possível.</p>
-      <form action="#" method="post">
-        <div class="contact-form__group">
-          <label for="name" class="contact-form__label">Nome completo*</label>
-          <input type="text" id="name" name="name" class="contact-form__input" placeholder="Nome completo*" required>
-        </div>
-        <div class="contact-form__group">
-          <label for="email" class="contact-form__label">E-mail*</label>
-          <input type="email" id="email" name="email" class="contact-form__input" placeholder="E-mail*" required>
-        </div>
-        <div class="contact-form__group">
-          <label for="phone" class="contact-form__label">Telefone</label>
-          <input type="tel" id="phone" name="phone" class="contact-form__input" placeholder="Telefone">
-        </div>
-        <div class="contact-form__group contact-form__group--double flex">
-          <div class="contact-form__group contact-form__group--state">
-            <label for="state" class="contact-form__label">Estado</label>
-            <select id="state" name="state" class="contact-form__select">
-              <option value="">Selecionar</option>
-              <!-- Adicione os estados aqui -->
-            </select>
-          </div>
-          <div class="contact-form__group contact-form__group--city">
-            <label for="city" class="contact-form__label">Cidade</label>
-            <select id="city" name="city" class="contact-form__select">
-              <option value="">Selecionar</option>
-              <!-- Adicione as cidades aqui -->
-            </select>
-          </div>
-        </div>
-        <div class="contact-form__group">
-          <p class="contact-form__label">Você já é MEI?</p>
-          <label class="contact-form__radio">
-            <input type="radio" name="is_mei" value="sim"> Sim
-          </label>
-          <label class="contact-form__radio">
-            <input type="radio" name="is_mei" value="não"> Não
-          </label>
-        </div>
-        <div class="contact-form__group">
-          <label for="message" class="contact-form__label">Mensagem</label>
-          <textarea id="message" name="message" class="contact-form__textarea" placeholder="Mensagem"></textarea>
-        </div>
-        <button type="submit" class="button button--primary contact-form__submit ">Enviar</button>
-      </form>
-
+    <section class="banner-tv__main container">
+      <picture>
+        <source srcset="./img/nfe-produto-banner-mob.png" media="(max-width:968px)">
+        <source srcset="./img/nfe-produto-banner-desktop.png" media="(min-width:968px)"><img decoding="async"
+          href="./img/nfe-produto-banner-desktop.png" alt="Banner" loading="lazy">
+      </picture>
     </section>
-    <section class="service-options">
-      <ul class="service-options__list">
-        <li class="service-options__item">
-          <i class="service-options__icon">
-            <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80" fill="none">
-              <path fill-rule="evenodd" clip-rule="evenodd"
-                d="M4.16699 70.0013C4.16699 68.6206 5.28628 67.5013 6.66699 67.5013H73.3337C74.7144 67.5013 75.8337 68.6206 75.8337 70.0013C75.8337 71.382 74.7144 72.5013 73.3337 72.5013H6.66699C5.28628 72.5013 4.16699 71.382 4.16699 70.0013Z"
-                fill="#0D4F70" />
-              <path fill-rule="evenodd" clip-rule="evenodd"
-                d="M16.667 45.8346C16.2068 45.8346 15.8337 46.2077 15.8337 46.668V66.668C15.8337 67.1282 16.2068 67.5013 16.667 67.5013H23.3337C23.7939 67.5013 24.167 67.1282 24.167 66.668V46.668C24.167 46.2077 23.7939 45.8346 23.3337 45.8346H16.667ZM10.8337 46.668C10.8337 43.4463 13.4453 40.8346 16.667 40.8346H23.3337C26.5553 40.8346 29.167 43.4463 29.167 46.668V66.668C29.167 69.8896 26.5553 72.5013 23.3337 72.5013H16.667C13.4453 72.5013 10.8337 69.8896 10.8337 66.668V46.668Z"
-                fill="#0D4F70" />
-              <path fill-rule="evenodd" clip-rule="evenodd"
-                d="M17.5003 56.668C17.5003 55.2873 18.6196 54.168 20.0003 54.168H21.667C23.0477 54.168 24.167 55.2873 24.167 56.668C24.167 58.0487 23.0477 59.168 21.667 59.168H20.0003C18.6196 59.168 17.5003 58.0487 17.5003 56.668Z"
-                fill="#0D4F70" />
-              <path fill-rule="evenodd" clip-rule="evenodd"
-                d="M30.0003 9.16797C29.5401 9.16797 29.167 9.54106 29.167 10.0013V66.668C29.167 67.1282 29.5401 67.5013 30.0003 67.5013H63.3337C63.7939 67.5013 64.167 67.1282 64.167 66.668V10.0013C64.167 9.54106 63.7939 9.16797 63.3337 9.16797H30.0003ZM24.167 10.0013C24.167 6.77964 26.7787 4.16797 30.0003 4.16797H63.3337C66.5553 4.16797 69.167 6.77964 69.167 10.0013V66.668C69.167 69.8896 66.5553 72.5013 63.3337 72.5013H30.0003C26.7787 72.5013 24.167 69.8896 24.167 66.668V10.0013Z"
-                fill="#0D4F70" />
-              <path d="M43.3337 16.668H36.667V23.3346H43.3337V16.668Z" fill="#0D4F70" />
-              <path d="M56.667 16.668H50.0003V23.3346H56.667V16.668Z" fill="#0D4F70" />
-              <path d="M43.3337 28.3346H36.667V35.0013H43.3337V28.3346Z" fill="#0D4F70" />
-              <path d="M56.667 28.3346H50.0003V35.0013H56.667V28.3346Z" fill="#0D4F70" />
-              <path d="M56.667 40.0013H50.0003V46.668H56.667V40.0013Z" fill="#0D4F70" />
-              <path d="M56.667 51.668H50.0003V58.3346H56.667V51.668Z" fill="#0D4F70" />
-            </svg>
-          </i>
-          <h3 class="service-options__title">17 Pontos</h3>
-          <p class="service-options__description">Atendimento presencial para auxiliar </br> sua jornada empreendedora.
-          </p>
-          <button class="button button--primary">Ver locais <span>&#x2B07;</span></button>
-        </li>
-        <li class="service-options__item">
-          <i class="service-options__icon">
-            <svg xmlns="http://www.w3.org/2000/svg" width="68" height="68" viewBox="0 0 68 68" fill="none">
-              <path
-                d="M43.5324 37.4285C45.0645 37.9105 46.5324 38.5765 47.9042 39.4119L47.8164 39.3609C49.3152 40.0267 50.6101 40.8059 51.7915 41.721L51.749 41.6899C51.8057 41.8627 51.8397 42.0582 51.8397 42.265L51.8369 42.3557V42.3529C51.7944 43.5684 51.5252 44.7102 51.069 45.75L51.0917 45.6905C50.4372 47.0024 49.3464 48.0139 48.0119 48.5522L47.9722 48.5664C46.5914 49.2883 45.0644 49.6865 43.5069 49.7309H43.4899C40.517 49.3486 37.6439 48.4044 35.0239 46.9485L35.1457 47.0109C32.3628 45.7502 29.8321 43.9943 27.6771 41.8287L27.6742 41.8259C25.3236 39.3785 23.1924 36.7295 21.3049 33.9095L21.1717 33.6999C19.2987 31.2515 18.212 28.2927 18.055 25.214L18.0522 25.1772V24.8259C18.0938 23.5107 18.4026 22.2179 18.9598 21.0259C19.5171 19.834 20.3111 18.7679 21.2936 17.8927L21.3021 17.8842C21.9089 17.2795 22.7263 16.9333 23.5829 16.918H23.5857C23.8719 16.9265 24.1467 16.9492 24.4131 16.9889L24.3762 16.9832C24.6227 17.02 24.9089 17.0427 25.2036 17.0484H25.2121C25.6246 17.0082 26.0384 17.1102 26.3851 17.3374L26.3794 17.3345C26.6826 17.6689 26.9149 18.074 27.0537 18.5189L27.0594 18.5415C27.2936 19.1271 27.7772 20.4153 28.5101 22.4062C28.8926 23.2959 29.2666 24.3924 29.5669 25.52L29.6066 25.6985C29.4022 26.6846 28.8699 27.5725 28.0964 28.2174L28.0879 28.223C27.0773 29.2921 26.5721 29.9721 26.5721 30.263C26.5829 30.5016 26.6626 30.7319 26.8016 30.926L26.7987 30.9232C27.8945 33.1886 29.4097 35.2258 31.2641 36.927L31.2782 36.9412C33.2195 38.69 35.3958 40.1586 37.7439 41.3045L37.9111 41.3782C38.1982 41.5645 38.5297 41.6711 38.8716 41.687H38.8772C39.3173 41.687 40.1088 40.9768 41.2516 39.5564C42.3943 38.1359 43.1537 37.4257 43.5296 37.4257L43.5324 37.4285ZM34.6159 60.7072H34.6782C38.3986 60.7125 42.0791 59.9415 45.4846 58.4434L45.3117 58.5114C51.9871 55.695 57.1919 50.4902 59.9402 43.9934L60.0082 43.8149C61.3965 40.6614 62.204 36.9837 62.204 33.119C62.204 29.2544 61.3965 25.5767 59.9402 22.2475L60.0082 22.4232C57.1919 15.7479 51.9871 10.543 45.4902 7.79469L45.3117 7.72669C42.1582 6.33836 38.4806 5.53086 34.6159 5.53086C30.7512 5.53086 27.0736 6.33836 23.7444 7.79469L23.9201 7.72669C17.2447 10.543 12.0399 15.7479 9.29155 22.2447L9.22355 22.4232C7.76268 25.8111 7.01521 29.4636 7.02772 33.153C7.01857 38.9864 8.885 44.6681 12.3516 49.3597L12.2977 49.286L8.82689 59.5229L19.4576 56.1399C23.8985 59.1309 29.1341 60.7219 34.4884 60.7072H34.6216H34.6159ZM34.6159 0.000192483H34.7094C39.3221 0.000192483 43.708 0.969193 47.6719 2.71736L47.465 2.63519C55.4692 6.02669 61.711 12.2685 65.0204 20.0574L65.1026 20.2727C66.7685 24.0609 67.7375 28.478 67.7375 33.1219C67.7375 37.7657 66.7685 42.1829 65.0204 46.1807L65.1026 45.971C61.7111 53.9752 55.4692 60.217 47.6804 63.5264L47.465 63.6085C43.7052 65.2745 39.3192 66.2435 34.7066 66.2435H34.6102H34.6159H34.4657C28.6319 66.2435 23.1551 64.7107 18.4177 62.0275L18.5792 62.1125L0.261719 68.0002L6.23722 50.2097C3.11804 45.0788 1.47669 39.186 1.49422 33.1814C1.49422 28.5177 2.46322 24.0807 4.21139 20.0602L4.12922 20.2727C7.52072 12.2685 13.7626 6.02669 21.5514 2.71736L21.7667 2.63519C25.791 0.882204 30.1357 -0.0151103 34.5252 0.000192483H34.6159Z"
-                fill="#0D4F70" />
-            </svg>
-          </i>
-          <h3 class="service-options__title">WhatsApp</h3>
-          <p class="service-options__description">Suporte ágil pelo Whatsapp.</br> Clique e comece a conversar agora!
-          </p>
-          <button class="button button--primary">Enviar mensagem</button>
-        </li>
-        <li class="service-options__item">
-          <i class="service-options__icon">
-            <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80" fill="none">
-              <path
-                d="M4.16699 11.668C4.16699 10.2873 5.28628 9.16797 6.66699 9.16797H73.3337C74.7144 9.16797 75.8337 10.2873 75.8337 11.668V61.668C75.8337 63.0487 74.7144 64.168 73.3337 64.168H35.5905L19.4517 72.2374C18.6767 72.6249 17.7564 72.5834 17.0193 72.1279C16.2823 71.6724 15.8337 70.8677 15.8337 70.0013V64.168H6.66699C5.28628 64.168 4.16699 63.0487 4.16699 61.668V11.668ZM9.16699 14.168V59.168H18.3337C19.7144 59.168 20.8337 60.2873 20.8337 61.668V65.9562L33.8823 59.4319C34.2294 59.2583 34.6122 59.168 35.0003 59.168H70.8337V14.168H9.16699Z"
-                fill="#0D4F70" />
-              <path
-                d="M51.667 24.168C53.0477 24.168 54.167 25.2873 54.167 26.668V28.3346C54.167 29.7153 53.0477 30.8346 51.667 30.8346C50.2863 30.8346 49.167 29.7153 49.167 28.3346V26.668C49.167 25.2873 50.2863 24.168 51.667 24.168Z"
-                fill="#0D4F70" />
-              <path
-                d="M28.3337 24.168C29.7144 24.168 30.8337 25.2873 30.8337 26.668V28.3346C30.8337 29.7153 29.7144 30.8346 28.3337 30.8346C26.9529 30.8346 25.8337 29.7153 25.8337 28.3346V26.668C25.8337 25.2873 26.9529 24.168 28.3337 24.168Z"
-                fill="#0D4F70" />
-              <path
-                d="M30.562 40.5346C29.9398 39.3108 28.4454 38.817 27.2156 39.4319C25.9807 40.0494 25.4801 41.5511 26.0976 42.786L28.3337 41.668C26.0976 42.786 26.0976 42.786 26.0976 42.786L26.0999 42.7907L26.1026 42.796L26.1089 42.8085L26.1256 42.8408L26.1749 42.9335C26.215 43.0075 26.2696 43.1054 26.3393 43.2237C26.4786 43.46 26.679 43.7796 26.9446 44.1547C27.474 44.902 28.2744 45.8861 29.3811 46.8698C31.6156 48.856 35.1017 50.8346 40.0003 50.8346C44.899 50.8346 48.3851 48.856 50.6196 46.8698C51.7263 45.8861 52.5266 44.902 53.056 44.1547C53.3217 43.7796 53.5221 43.46 53.6613 43.2237C53.731 43.1054 53.7857 43.0075 53.8258 42.9335L53.8751 42.8408L53.8917 42.8085L53.898 42.796L53.9007 42.7907C53.9007 42.7907 53.9031 42.786 51.667 41.668L53.9031 42.786C54.5205 41.5511 54.02 40.0494 52.785 39.4319C51.5552 38.817 50.0609 39.3108 49.4387 40.5346L49.4293 40.5521C49.4165 40.5758 49.3914 40.6212 49.3536 40.6852C49.278 40.8135 49.1529 41.0146 48.9759 41.2646C48.6199 41.7672 48.066 42.4499 47.2977 43.1328C45.7822 44.4799 43.435 45.8346 40.0003 45.8346C36.5656 45.8346 34.2184 44.4799 32.7029 43.1328C31.9346 42.4499 31.3808 41.7672 31.0248 41.2646C30.8477 41.0146 30.7226 40.8135 30.647 40.6852C30.6093 40.6212 30.5842 40.5758 30.5714 40.5521L30.562 40.5346Z"
-                fill="#0D4F70" />
-            </svg>
-          </i>
-          <h3 class="service-options__title">Atendimento via Chat</h3>
-          <p class="service-options__description">Fale com nossos especialistas em tempo real.</br> Atendimento imediato
-            e
-            eficiente!</p>
-          <button class="button button--primary">Iniciar atendimento</button>
-        </li>
-      </ul>
+    <section class="services">
+      <div class="container flex flex--middle flex--center">
+        <img src="./img/nfe-servico-dash.png" alt="abrir seu CNPJ MEI" />
+        <div class="services__text">
+          <h2 class="services__title">A solução completa para emissão de notas fiscais de produtos</h2>
+          <p class="services__subtitle">A <strong> ferramenta perfeita para MEIs</strong>que atuam no ramo de vendasde
+            produtos, seja em lojas físicas ou pela internet.</p>
+          <ul class="services__list">
+            <li class="services__item flex flex--middle">
+
+              <span>Cadastro ilimitado de produtos. </span>
+            </li>
+            <li class="services__item flex flex--middle">
+
+              <span>Emissão de notas ilimitadas.
+              </span>
+            </li>
+            <li class="services__item flex flex--middle">
+              <span>Mais praticidade na hora de emitir suas NFs.</span>
+            </li>
+            <li class="services__item flex flex--middle">
+              <span>Plataforma amigável de fácil preenchimento.
+              </span>
+            </li>
+            <li class="services__item flex flex--middle">
+              <span>Suporte especializado online ou presencial.
+              </span>
+            </li>
+            <li class="services__item flex flex--middle">
+              <span>100% na nuvem! Emita de onde estiver.
+              </span>
+            </li>
+            <li class="services__item flex flex--middle">
+              <span>Para emitir, é obrigatório o uso de Certificado Digital.
+              </span>
+            </li>
+          </ul>
+          <a class="button button--primary flex flex--middle flex--center">Cadastre-se agora</a>
+        </div>
+      </div>
+    </section>
+    <section class="benefits">
+      <div class="container">
+        <h2 class="benefits__title">Vantagens do emissor de NFs de produtos do Portal do MEI</h2>
+        <ul class="benefits__list flex">
+          <li class="benefits__item ">
+            <i class="benefits__icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M6.50195 6C6.50195 4.067 8.06896 2.5 10.002 2.5H31.002C31.4272 2.5 31.8324 2.68048 32.1169 2.99655L41.1169 12.9966C41.3648 13.272 41.502 13.6294 41.502 14V23C41.502 23.8284 40.8304 24.5 40.002 24.5C39.1735 24.5 38.502 23.8284 38.502 23V14.5756L30.3339 5.5H10.002C9.72581 5.5 9.50195 5.72386 9.50195 6V42C9.50195 42.2762 9.7258 42.5 10.002 42.5H22.002C22.8304 42.5 23.502 43.1716 23.502 44C23.502 44.8284 22.8304 45.5 22.002 45.5H10.002C8.06897 45.5 6.50195 43.933 6.50195 42V6Z"
+                  fill="#00547A" />
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M31.002 29.5C28.5167 29.5 26.502 31.5147 26.502 34C26.502 36.4853 28.5167 38.5 31.002 38.5C33.4872 38.5 35.502 36.4853 35.502 34C35.502 31.5147 33.4872 29.5 31.002 29.5ZM23.502 34C23.502 29.8579 26.8598 26.5 31.002 26.5C35.1441 26.5 38.502 29.8579 38.502 34C38.502 38.1421 35.1441 41.5 31.002 41.5C26.8598 41.5 23.502 38.1421 23.502 34Z"
+                  fill="#00547A" />
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M34.8307 37.063C35.3482 36.4161 36.2922 36.3112 36.9391 36.8288L41.9391 40.8288C42.5859 41.3463 42.6908 42.2902 42.1733 42.9371C41.6558 43.584 40.7119 43.6889 40.065 43.1714L35.065 39.1714C34.4181 38.6538 34.3132 37.7099 34.8307 37.063Z"
+                  fill="#00547A" />
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M30.002 2.5C30.8304 2.5 31.502 3.17157 31.502 4V12.5H40.002C40.8304 12.5 41.502 13.1716 41.502 14C41.502 14.8284 40.8304 15.5 40.002 15.5H30.002C29.1735 15.5 28.502 14.8284 28.502 14V4C28.502 3.17157 29.1735 2.5 30.002 2.5Z"
+                  fill="#00547A" />
+              </svg>
+            </i>
+            <h3 class="benefits__item-title">Cadastro detalhado de seus produtos </h3>
+            <p class="benefits__item-text">Registre as informações de seus itens como nome, SKU, peso, preço fabricante,
+              código de barras, entre outros. </p>
+          </li>
+          <li class="benefits__item">
+            <i class="benefits__icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
+                <path
+                  d="M14 25.5C12.067 25.5 10.5 27.067 10.5 29C10.5 30.933 12.067 32.5 14 32.5C15.933 32.5 17.5 30.933 17.5 29C17.5 27.067 15.933 25.5 14 25.5ZM7.5 29C7.5 25.4101 10.4101 22.5 14 22.5C17.5899 22.5 20.5 25.4101 20.5 29C20.5 32.5899 17.5899 35.5 14 35.5C10.4101 35.5 7.5 32.5899 7.5 29Z"
+                  fill="#00547A" />
+                <path
+                  d="M34 25.5C32.067 25.5 30.5 27.067 30.5 29C30.5 30.933 32.067 32.5 34 32.5C35.933 32.5 37.5 30.933 37.5 29C37.5 27.067 35.933 25.5 34 25.5ZM27.5 29C27.5 25.4101 30.4101 22.5 34 22.5C37.5899 22.5 40.5 25.4101 40.5 29C40.5 32.5899 37.5899 35.5 34 35.5C30.4101 35.5 27.5 32.5899 27.5 29Z"
+                  fill="#00547A" />
+                <path
+                  d="M24 5.5C22.067 5.5 20.5 7.067 20.5 9C20.5 10.933 22.067 12.5 24 12.5C25.933 12.5 27.5 10.933 27.5 9C27.5 7.067 25.933 5.5 24 5.5ZM17.5 9C17.5 5.41015 20.4101 2.5 24 2.5C27.5899 2.5 30.5 5.41015 30.5 9C30.5 12.5899 27.5899 15.5 24 15.5C20.4101 15.5 17.5 12.5899 17.5 9Z"
+                  fill="#00547A" />
+                <path
+                  d="M2.5 44C2.5 37.6488 7.64872 32.5 14 32.5C20.3512 32.5 25.5 37.6488 25.5 44C25.5 44.8284 24.8284 45.5 24 45.5C23.1716 45.5 22.5 44.8284 22.5 44C22.5 39.3056 18.6944 35.5 14 35.5C9.30558 35.5 5.5 39.3056 5.5 44C5.5 44.8284 4.82843 45.5 4 45.5C3.17157 45.5 2.5 44.8284 2.5 44Z"
+                  fill="#00547A" />
+                <path
+                  d="M22.5 44C22.5 37.6488 27.6488 32.5 34 32.5C40.3512 32.5 45.5 37.6488 45.5 44C45.5 44.8284 44.8284 45.5 44 45.5C43.1716 45.5 42.5 44.8284 42.5 44C42.5 39.3056 38.6944 35.5 34 35.5C29.3056 35.5 25.5 39.3056 25.5 44C25.5 44.8284 24.8284 45.5 24 45.5C23.1716 45.5 22.5 44.8284 22.5 44Z"
+                  fill="#00547A" />
+                <path
+                  d="M12.5 24C12.5 17.6488 17.6488 12.5 24 12.5C30.3512 12.5 35.5 17.6488 35.5 24C35.5 24.8284 34.8284 25.5 34 25.5C33.1716 25.5 32.5 24.8284 32.5 24C32.5 19.3056 28.6944 15.5 24 15.5C19.3056 15.5 15.5 19.3056 15.5 24C15.5 24.8284 14.8284 25.5 14 25.5C13.1716 25.5 12.5 24.8284 12.5 24Z"
+                  fill="#00547A" />
+              </svg>
+            </i>
+            <h3 class="benefits__item-title">Perfis cadastrais dos seus clientes
+            </h3>
+            <p class="benefits__item-text">Cadastre sua carteira de clientes para agilizar suas emissões de notas
+              fiscais no futuro. </p>
+          </li>
+          <li class="benefits__item">
+            <i class="benefits__icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M6.5 6C6.5 4.067 8.067 2.5 10 2.5H31C31.4252 2.5 31.8305 2.68048 32.1149 2.99655L41.1149 12.9966C41.3628 13.272 41.5 13.6294 41.5 14V23C41.5 23.8284 40.8284 24.5 40 24.5C39.1716 24.5 38.5 23.8284 38.5 23V14.5756L30.332 5.5H10C9.72386 5.5 9.5 5.72386 9.5 6V42C9.5 42.2762 9.72384 42.5 10 42.5H22C22.8284 42.5 23.5 43.1716 23.5 44C23.5 44.8284 22.8284 45.5 22 45.5H10C8.06702 45.5 6.5 43.933 6.5 42V6Z"
+                  fill="#00547A" />
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M34 32.5C32.067 32.5 30.5 34.067 30.5 36C30.5 37.933 32.067 39.5 34 39.5C35.933 39.5 37.5 37.933 37.5 36C37.5 34.067 35.933 32.5 34 32.5ZM27.5 36C27.5 32.4101 30.4101 29.5 34 29.5C37.5899 29.5 40.5 32.4101 40.5 36C40.5 39.5899 37.5899 42.5 34 42.5C30.4101 42.5 27.5 39.5899 27.5 36Z"
+                  fill="#00547A" />
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M34 26.5C34.8284 26.5 35.5 27.1716 35.5 28V31C35.5 31.8284 34.8284 32.5 34 32.5C33.1716 32.5 32.5 31.8284 32.5 31V28C32.5 27.1716 33.1716 26.5 34 26.5Z"
+                  fill="#00547A" />
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M34 39.5C34.8284 39.5 35.5 40.1716 35.5 41V44C35.5 44.8284 34.8284 45.5 34 45.5C33.1716 45.5 32.5 44.8284 32.5 44V41C32.5 40.1716 33.1716 39.5 34 39.5Z"
+                  fill="#00547A" />
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M40.889 28.9393C41.4748 29.5251 41.4748 30.4749 40.889 31.0607L38.7677 33.182C38.1819 33.7677 37.2322 33.7677 36.6464 33.182C36.0606 32.5962 36.0606 31.6464 36.6464 31.0606L38.7677 28.9393C39.3535 28.3536 40.3032 28.3536 40.889 28.9393Z"
+                  fill="#00547A" />
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M30.889 38.9393C31.4748 39.5251 31.4748 40.4749 30.889 41.0607L28.7677 43.182C28.1819 43.7677 27.2322 43.7677 26.6464 43.182C26.0606 42.5962 26.0606 41.6464 26.6464 41.0606L28.7677 38.9393C29.3535 38.3536 30.3032 38.3536 30.889 38.9393Z"
+                  fill="#00547A" />
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M26.9393 28.9393C27.5251 28.3536 28.4749 28.3536 29.0607 28.9393L31.182 31.0606C31.7677 31.6464 31.7677 32.5962 31.182 33.182C30.5962 33.7677 29.6464 33.7677 29.0606 33.182L26.9393 31.0607C26.3536 30.4749 26.3536 29.5251 26.9393 28.9393Z"
+                  fill="#00547A" />
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M36.9393 38.9393C37.5251 38.3536 38.4749 38.3536 39.0607 38.9393L41.182 41.0606C41.7677 41.6464 41.7677 42.5962 41.182 43.182C40.5962 43.7677 39.6464 43.7677 39.0606 43.182L36.9393 41.0607C36.3536 40.4749 36.3536 39.5251 36.9393 38.9393Z"
+                  fill="#00547A" />
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M24.5 36C24.5 35.1716 25.1716 34.5 26 34.5H29C29.8284 34.5 30.5 35.1716 30.5 36C30.5 36.8284 29.8284 37.5 29 37.5H26C25.1716 37.5 24.5 36.8284 24.5 36Z"
+                  fill="#00547A" />
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M37.5 36C37.5 35.1716 38.1716 34.5 39 34.5H42C42.8284 34.5 43.5 35.1716 43.5 36C43.5 36.8284 42.8284 37.5 42 37.5H39C38.1716 37.5 37.5 36.8284 37.5 36Z"
+                  fill="#00547A" />
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M30 2.5C30.8284 2.5 31.5 3.17157 31.5 4V12.5H40C40.8284 12.5 41.5 13.1716 41.5 14C41.5 14.8284 40.8284 15.5 40 15.5H30C29.1716 15.5 28.5 14.8284 28.5 14V4C28.5 3.17157 29.1716 2.5 30 2.5Z"
+                  fill="#00547A" />
+              </svg>
+            </i>
+            <h3 class="benefits__item-title">Gerencie suas notas fiscais com facilidade</h3>
+            <p class="benefits__item-text">Tenha total autonomia para emitir, visualizar, baixar XML, cancelar, devolver
+              e solicitar correções em suas notas fiscais.</p>
+          </li>
+          <li class="benefits__item">
+            <i class="benefits__icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M6.5 6C6.5 4.067 8.067 2.5 10 2.5H31C31.4252 2.5 31.8305 2.68048 32.1149 2.99655L41.1149 12.9966C41.3628 13.272 41.5 13.6294 41.5 14V23C41.5 23.8284 40.8284 24.5 40 24.5C39.1716 24.5 38.5 23.8284 38.5 23V14.5756L30.332 5.5H10C9.72386 5.5 9.5 5.72386 9.5 6V42C9.5 42.2762 9.72384 42.5 10 42.5H22C22.8284 42.5 23.5 43.1716 23.5 44C23.5 44.8284 22.8284 45.5 22 45.5H10C8.06702 45.5 6.5 43.933 6.5 42V6Z"
+                  fill="#00547A" />
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M35.9393 29.9393C36.5251 29.3536 37.4749 29.3536 38.0607 29.9393L43.0607 34.9393C43.6464 35.5251 43.6464 36.4749 43.0607 37.0607L38.0607 42.0607C37.4749 42.6464 36.5251 42.6464 35.9393 42.0607C35.3536 41.4749 35.3536 40.5251 35.9393 39.9393L39.8787 36L35.9393 32.0607C35.3536 31.4749 35.3536 30.5251 35.9393 29.9393Z"
+                  fill="#00547A" />
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M32.0607 29.9393C32.6464 30.5251 32.6464 31.4749 32.0607 32.0607L28.1213 36L32.0607 39.9393C32.6464 40.5251 32.6464 41.4749 32.0607 42.0607C31.4749 42.6464 30.5251 42.6464 29.9393 42.0607L24.9393 37.0607C24.3536 36.4749 24.3536 35.5251 24.9393 34.9393L29.9393 29.9393C30.5251 29.3536 31.4749 29.3536 32.0607 29.9393Z"
+                  fill="#00547A" />
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M30 2.5C30.8284 2.5 31.5 3.17157 31.5 4V12.5H40C40.8284 12.5 41.5 13.1716 41.5 14C41.5 14.8284 40.8284 15.5 40 15.5H30C29.1716 15.5 28.5 14.8284 28.5 14V4C28.5 3.17157 29.1716 2.5 30 2.5Z"
+                  fill="#00547A" />
+              </svg>
+            </i>
+            <h3 class="benefits__item-title">Processo de emissão otimizado </h3>
+            <p class="benefits__item-text">A função de emitir notas fiscais no Portal do MEI facilita para os
+              Microempreendedores Individuais.
+            </p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="management">
+      <div class="container flex flex--center flex--middle">
+        <div class="management__box-content">
+          <h2 class="management__title">
+            Venda com NFs </br> e amplie seus lucros!
+          </h2>
+          <h3 class="management__subtitle">
+            Confira algumas dúvidas comuns sobre a DAS.
+          </h3>
+          <ul class="management__list js-accordion slide slide-only-mobile">
+            <li class="management__item js-accordion-area slide-item is-active">
+              <img class="management__item-img" src="./img/nfe-servico-banner-one.png" alt="" />
+              <h4 class="management__item-title js-accordion-toggle">Amplia as possibilidades de negociação</h4>
+              <p class="management__item-subtitle">
+                Ao se formalizar como MEI, você obtém a autorização para emitir notas fiscais, abrindo novas
+                perspectivas de vendas para empresas, pessoas físicas e instituições públicas. </p>
+            </li>
+            <li class="management__item js-accordion-area slide-item">
+              <img class="management__item-img" src="./img/nfe-servico-banner-two.png" alt="" />
+              <h4 class="management__item-title js-accordion-toggle">Fornece confiança e credibilidade</h4>
+              <p class="management__item-subtitle">
+                Emitir nota fiscal é uma forma do MEI demonstrar seu comprometimento e confiabilidade, essenciais para
+                cultivar relações sólidas e duradouras com os clientes.
+              </p>
+            </li>
+            <li class="management__item js-accordion-area slide-item">
+              <img class="management__item-img" src="./img/nfe-servico-banner-three.png" alt="" />
+              <h4 class="management__item-title js-accordion-toggle"> Fideliza clientes</h4>
+              <p class="management__item-subtitle">
+                estratégia
+              </p>
+            </li>
+            <li class="management__item js-accordion-area slide-item">
+              <img class="management__item-img" src="./img/nfe-servico-banner-four.png" alt="" />
+              <h4 class="management__item-title js-accordion-toggle"> Ajuda no controle financeiro</h4>
+              <p class="management__item-subtitle">
+                Emitir notas fiscais regularmente organiza as vendas e receitas do MEI, facilitando o controle
+                financeiro e a tomada de decisõespara o negócio. </p>
+            </li>
+            <li class="management__item js-accordion-area slide-item">
+              <img class="management__item-img" src="./img/nfe-servico-banner-five.png" alt="" />
+              <h4 class="management__item-title js-accordion-toggle"> Certifica a legalidade das vendas
+              </h4>
+              <p class="management__item-subtitle">
+                A nota fiscal é um comprovante de que o MEI vendeu produtos ou serviços dentro das normas legais. </p>
+            </li>
+
+            <div class="slide-dots"></div>
+          </ul>
+        </div>
+        <div class="management__box-img">
+          <img class="management__img js-change-img" src="./img/nfe-servico-banner-one.png" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <section class="pricing no-pricing">
+      <div class="container">
+        <h2 class="pricing__subtitle">Ter um CNPJ MEI nunca foi tão fácil e rápido!</h2>
+        <div class="pricing__info flex flex--center flex--middle">
+          <div class="pricing__content">
+            <div class="pricing__box-text">
+              <h2 class="pricing__content-title">
+                <strong>Crie seu MEI</strong> de forma rápida e fácil
+              </h2>
+              <span>
+                <ul>
+                  <li>Abra seu MEI em minutos</li>
+                  <li>Emissão de guias DAS e NFS-e</li>
+                  <li>Um guia com tudo sobre MEI</li>
+                  <li>Conte com o suporte de especialistas</li>
+                </ul>
+                <a href="./quero-ser-mei.html" class=" button button--primary">Quero ser MEI</a>
+              </span>
+            </div>
+
+            <div class="pricing__content-description flex flex--middle ">
+              <img src="./img/model-1.png" alt="Imagem 1">
+            </div>
+          </div>
+          <div class="pricing__content pricing__content--invert">
+            <div class="pricing__box-text">
+              <h2 class="pricing__content-title">
+                <strong>Já tem MEI? </strong> simplifique sua vida
+              </h2>
+              <span>
+                <ul>
+                  <li>Centralize suas DAS e NFS-e</li>
+                  <li>Evite multas e pagamentos indevidos</li>
+                  <li>Suporte especializado</li>
+                  <li>Cursos exclusivos sobre MEI</li>
+                </ul>
+                <a href="./ja-sou-mei.html" class="button button--primary">Cadastre-se agora</a>
+              </span>
+            </div>
+            <div class="pricing__content-description flex flex--middle flex--row-reverse">
+              <img src="./img/model-2.png" alt="Imagem 2" />
+            </div>
+          </div>
+
+        </div>
+
+      </div>
     </section>
 
 
@@ -485,5 +639,6 @@
     </div>
   </footer>
 <script type="text/javascript" src="./js/portalmei-1.0.0.min.js"></script></body>
+
 
 </html>

@@ -6,13 +6,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portal Mei</title>
   <link rel="stylesheet" href="./css/reset.css">
-  <link href="./css/portalmei-1.0.0.min.css" rel="stylesheet">
-</head>
+<link href="./css/portalmei-1.0.0.min.css" rel="stylesheet"></head>
 
 
 <body>
   <header class="header container flex flex--between flex--middle ">
-    <a class="header__logo flex flex--middle" href="./" title="Logotipo da Associação Comercial de São Paulo">
+    <a class="header__logo flex flex--middle" href="/" title="Logotipo da Associação Comercial de São Paulo">
       <svg xmlns="http://www.w3.org/2000/svg" width="161" height="28" viewBox="0 0 161 28" fill="none">
         <path
           d="M24.3808 0.907976L30.156 2.84222C30.4705 2.95592 30.7439 3.17193 30.9375 3.45975C31.1311 3.74757 31.2355 4.09289 31.2355 4.44688V23.8866C31.2343 24.2556 31.1217 24.6145 30.9116 24.9084C30.7028 25.2023 30.4083 25.4153 30.075 25.5149L24.2999 27.1195C24.064 27.1899 23.8165 27.2011 23.5759 27.1524C23.3354 27.1037 23.1078 26.9963 22.913 26.8386C22.717 26.6811 22.5586 26.4774 22.4495 26.2436C22.3404 26.0099 22.2829 25.7524 22.2829 25.4913V2.50876C22.2829 2.23983 22.3439 1.97489 22.4589 1.73588C22.5739 1.49676 22.7417 1.29048 22.947 1.13396C23.1512 0.977555 23.3882 0.875357 23.6381 0.83605C23.888 0.796743 24.1427 0.821384 24.3808 0.907976Z"
@@ -64,31 +63,50 @@
       </button>
       <ul class="menu__nav-list flex flex--center">
         <li class="menu__nav-item">
-          <a href="./quem-somos.html" class="menu__nav-link ">Quem somos</a>
-        </li>
-        <li class="menu__nav-item">
-          <a href="./servicos.html" class="menu__nav-link menu__nav-link--sublist">Serviços</a>
+          <a href="#" class="menu__nav-link menu__nav-link--sublist">Institucional</a>
           <ul class="menu__sublist">
             <li class="menu__subitem">
-              <a href="./emissao-das.html" class="menu__sublink">Emissão DAS</a>
+              <a href="./quem-somos.html" class="menu__sublink">Quem somos</a>
             </li>
             <li class="menu__subitem">
-              <a href="./nf-servico.html" class="menu__sublink">NF de serviço</a>
+              <a href="./pontos-de-atendimento.html" class="menu__sublink">Pontos de atendimento</a>
+            </li>
+          </ul>
+        </li>
+        <li class="menu__nav-item">
+          <a href="#" class="menu__nav-link menu__nav-link--sublist">Serviços</a>
+          <ul class="menu__sublist">
+            <li class="menu__subitem">
+              <a href="./abrir-cnpj-mei.html" class="menu__sublink">Abertura de CNPJ MEI</a>
             </li>
             <li class="menu__subitem">
-              <a href="./nf-produto.html" class="menu__sublink">NF de produto</a>
+              <a href="./emissao-de-guia-das.html" class="menu__sublink">Emissão de guia DAS</a>
             </li>
             <li class="menu__subitem">
-              <a href="./fincancas-mei.html" class="menu__sublink">Finanças MEI</a>
+              <a href="./notas-fiscais-de-produtos.html" class="menu__sublink">Notas fiscais de produtos</a>
             </li>
             <li class="menu__subitem">
-              <a href="./declaracao-das.html" class="menu__sublink">Declaração DASN</a>
+              <a href="./notas-fiscais-de-servicos.html" class="menu__sublink">Notas fiscais de serviços</a>
             </li>
             <li class="menu__subitem">
-              <a href="#" class="menu__sublink">Contabilidade</a>
+              <a href="./financas-mei.html" class="menu__sublink">Finanças MEI</a>
+            </li>
+            <li class="menu__subitem">
+              <a href="./declaracao-anual-dasn.html" class="menu__sublink">Declaração anual DASN</a>
             </li>
             <li class="menu__subitem">
               <a href="./servicos-adicionais.html" class="menu__sublink">Serviços adicionais</a>
+            </li>
+          </ul>
+        </li>
+        <li class="menu__nav-item">
+          <a href="#" class="menu__nav-link menu__nav-link--sublist">Benefícios</a>
+          <ul class="menu__sublist">
+            <li class="menu__subitem">
+              <a href="./cursos-exclusivos.html" class="menu__sublink">Cursos exclusivos</a>
+            </li>
+            <li class="menu__subitem">
+              <a href="./clube-de-descontos.html" class="menu__sublink">Clube de descontos</a>
             </li>
           </ul>
         </li>
@@ -99,7 +117,7 @@
           <a href="./faq.html" class="menu__nav-link">Dúvidas</a>
         </li>
         <li class="menu__nav-item">
-          <a href="./contato.html" class="menu__nav-link">Contato</a>
+          <a href="./contato.html" class="menu__nav-link">Contato ACSP</a>
         </li>
         <li class="menu__nav-item menu__nav-item--login">
           <button class="menu__nav-link menu__nav-link--login flex flex--center js-toggle-login">
@@ -115,7 +133,7 @@
                 </clipPath>
               </defs>
             </svg>
-            <span>Olá! Faça seu Login.</span>
+            <span>Olá! Faça seu Login</span>
           </button>
           <div class="login__content">
             <button class="login__close js-toggle-login">
@@ -308,27 +326,15 @@
   <footer class="footer">
     <div class="container">
       <div class="footer__media flex flex--between flex--middle">
-
         <div class="footer__logo flex flex--middle">
-          <img src="./portalmei/img/logo-associacao-comercial-white.png" alt="Associação Comercial"
-            class="footer__logo-image" />
+          <img src="../img/logo-associacao-comercial-white.png" alt="Associação Comercial" class="footer__logo-image" />
           <span class="footer__separator"></span>
-          <img src="./portalmei/img/logo-porta-mei-white.svg" alt="Portal Mei" class="footer__logo-image" />
+          <img src="../img/logo-porta-mei-white.svg" alt="Portal Mei" class="footer__logo-image" />
         </div>
         <div class="footer__social">
           <h3 class="footer__social-title">Siga nas redes sociais</h3>
 
           <ul class="footer__social-icons flex flex--middle flex--center">
-            <!-- <li>
-                            <a href="#" class="footer__social-icon">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="34" height="35" viewBox="0 0 34 35"
-                                    fill="none">
-                                    <path fill-rule="evenodd" clip-rule="evenodd"
-                                        d="M17.25 0.952881C7.99923 0.952881 0.5 8.45211 0.5 17.7029C0.5 26.9537 7.99923 34.4529 17.25 34.4529C26.5008 34.4529 34 26.9537 34 17.7029C34 8.45211 26.5008 0.952881 17.25 0.952881ZM18.9958 18.4386V27.5515H15.2253V18.439H13.3416V15.2986H15.2253V13.4132C15.2253 10.8513 16.289 9.32788 19.311 9.32788H21.8269V12.4686H20.2543C19.0779 12.4686 19.0001 12.9075 19.0001 13.7265L18.9958 15.2983H21.8447L21.5114 18.4386H18.9958Z"
-                                        fill="white" />
-                                </svg>
-                            </a>
-                        </li> -->
             <li>
               <a href="#" class="footer__social-icon">
                 <svg xmlns="http://www.w3.org/2000/svg" width="34" height="35" viewBox="0 0 34 35" fill="none">
@@ -426,7 +432,7 @@
               </i>contato@portaldomei.com.br
             </li>
             <li class="footer__column-item">
-              <a href="./atendimento.html">
+              <a href="./pontos-de-atendimento.html">
                 <i class="footer__column-icon">
                   <svg xmlns="http://www.w3.org/2000/svg" width="14" height="15" viewBox="0 0 14 15" fill="none">
                     <path fill-rule="evenodd" clip-rule="evenodd"
@@ -450,25 +456,36 @@
           </ul>
         </div>
         <div class="footer__column">
+          <h4 class="footer__column-title">Benefícios</h4>
+          <ul>
+            <li class="footer__column-item">
+              <a href="./cursos-exclusivos.html">Cursos exclusivos</a>
+            </li>
+            <li class="footer__column-item">
+              <a href="./clube-de-descontos.html">Clube de descontos</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__column">
           <h4 class="footer__column-title">Serviços</h4>
           <ul>
             <li class="footer__column-item">
-              <a href="./emissao-das.html">Emissão DAS</a>
+              <a href="./abrir-cnpj-mei.html">Abertura de CNPJ MEI</a>
             </li>
             <li class="footer__column-item">
-              <a href="./emissao-das.html">NF de serviço</a>
+              <a href="./emissao-de-guia-das.html">Emissão de guia DAS</a>
             </li>
             <li class="footer__column-item">
-              <a href="./nf-produto.html">NF de produto</a>
+              <a href="./notas-fiscais-de-produtos.html">Notas fiscais de produtos</a>
+            </li>
+            <li class="footer__column-item">
+              <a href="./notas-fiscais-de-servicos.html">Notas fiscais de serviços</a>
             </li>
             <li class="footer__column-item">
               <a href="./financas-mei.html">Finanças MEI</a>
             </li>
             <li class="footer__column-item">
-              <a href="./declaracao-dasn.html">Declaração DASN</a>
-            </li>
-            <li class="footer__column-item">
-              <a href="#">Contabilidade</a>
+              <a href="./declaracao-anual-dasn.html">Declaração anual DASN</a>
             </li>
             <li class="footer__column-item">
               <a href="./servicos-adicionais.html">Serviços adicionais</a>
@@ -482,6 +499,7 @@
             <li class="footer__column-item"><a href="./faq.html">Dúvidas frequentes</a></li>
             <li class="footer__column-item"><a href="./termos.html">Política de cookies</a></li>
             <li class="footer__column-item"><a href="./termos.html">Termos de uso e privacidade</a></li>
+            <li class="footer__column-item"><a href="./pontos-de-atendimento.html">Pontos de atendimento</a></li>
           </ul>
         </div>
 
@@ -492,7 +510,6 @@
         direitos reservados.</p>
     </div>
   </footer>
-  <script type="text/javascript" src="./js/portalmei-1.0.0.min.js"></script>
-</body>
+<script type="text/javascript" src="./js/portalmei-1.0.0.min.js"></script></body>
 
 </html>
