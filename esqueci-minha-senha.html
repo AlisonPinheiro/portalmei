@@ -9,7 +9,7 @@
 <link href="./css/portalmei-1.0.0.min.css" rel="stylesheet"></head>
 
 
-<body>
+<body class="esqueci-minha-senha">
   <header class="header container flex flex--between flex--middle ">
     <a class="header__logo flex flex--middle" href="/" title="Logotipo da Associação Comercial de São Paulo">
       <svg xmlns="http://www.w3.org/2000/svg" width="161" height="28" viewBox="0 0 161 28" fill="none">
@@ -176,7 +176,28 @@
     </nav>
   </header>
   <main>
-    <!-- Conteúdo -->
+    <section class="login__forgot-pass--section">
+      <form id="form__forgot-pass">
+        <h2>Recuperar senha</h2>
+        <p>Insira o seu endereço de e-mail registrado no Portal do MEI para recuperar o acesso à sua conta. Um e-mail de
+          recuperação será enviado para você em instantes.</p>
+
+        <label for="email">Email*</label>
+        <input class="register__input" placeholder="informe o e-mail" type="email" id="email" name="email" required="">
+
+        <div class="form__forgot-pass--footer">
+          <button id="form-back" type="button" class="button button--secondary">Voltar</button>
+          <button type="submit" class="button button--primary" id="forgot-password-btn-submit">Enviar</button>
+        </div>
+
+        <span class="form__forgot-pass-disclaimer">
+          <b>Observação:</b> Ao solicitar a recuperação de senha, você terá 15 minutos para redefini-la. Após esse
+          tempo, será
+          necessário
+          realizar uma nova solicitação.
+        </span>
+      </form>
+    </section>
   </main>
   <footer class="footer">
     <div class="container">
@@ -254,15 +275,15 @@
               </a>
             </li>
             <!-- <li>
-                                    <a href="#" class="footer__social-icon">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="34" height="35" viewBox="0 0 34 35"
-                                            fill="none">
-                                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                                d="M16.75 0.952881C7.49923 0.952881 0 8.45211 0 17.7029C0 26.9537 7.49923 34.4529 16.75 34.4529C26.0008 34.4529 33.5 26.9537 33.5 17.7029C33.5 8.45211 26.0008 0.952881 16.75 0.952881ZM8.04121 14.8259H11.8371V26.2311H8.04121V14.8259ZM12.087 11.2979C12.0624 10.1796 11.2627 9.32788 9.96414 9.32788C8.66559 9.32788 7.81663 10.1796 7.81663 11.2979C7.81663 12.393 8.64049 13.2693 9.91487 13.2693H9.93913C11.2627 13.2693 12.087 12.393 12.087 11.2979ZM21.1561 14.5582C23.654 14.5582 25.5266 16.1886 25.5266 19.6918L25.5265 26.2311H21.7307V20.1294C21.7307 18.5967 21.1814 17.5509 19.8073 17.5509C18.7586 17.5509 18.1339 18.256 17.8596 18.9369C17.7592 19.181 17.7346 19.521 17.7346 19.8619V26.2314H13.9382C13.9382 26.2314 13.9883 15.8965 13.9382 14.8263H17.7346V16.4417C18.2384 15.6652 19.1407 14.5582 21.1561 14.5582Z"
-                                                fill="white" />
-                                        </svg>
-                                    </a>
-                                </li> -->
+                                            <a href="#" class="footer__social-icon">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="34" height="35" viewBox="0 0 34 35"
+                                                    fill="none">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                        d="M16.75 0.952881C7.49923 0.952881 0 8.45211 0 17.7029C0 26.9537 7.49923 34.4529 16.75 34.4529C26.0008 34.4529 33.5 26.9537 33.5 17.7029C33.5 8.45211 26.0008 0.952881 16.75 0.952881ZM8.04121 14.8259H11.8371V26.2311H8.04121V14.8259ZM12.087 11.2979C12.0624 10.1796 11.2627 9.32788 9.96414 9.32788C8.66559 9.32788 7.81663 10.1796 7.81663 11.2979C7.81663 12.393 8.64049 13.2693 9.91487 13.2693H9.93913C11.2627 13.2693 12.087 12.393 12.087 11.2979ZM21.1561 14.5582C23.654 14.5582 25.5266 16.1886 25.5266 19.6918L25.5265 26.2311H21.7307V20.1294C21.7307 18.5967 21.1814 17.5509 19.8073 17.5509C18.7586 17.5509 18.1339 18.256 17.8596 18.9369C17.7592 19.181 17.7346 19.521 17.7346 19.8619V26.2314H13.9382C13.9382 26.2314 13.9883 15.8965 13.9382 14.8263H17.7346V16.4417C18.2384 15.6652 19.1407 14.5582 21.1561 14.5582Z"
+                                                        fill="white" />
+                                                </svg>
+                                            </a>
+                                        </li> -->
             <li>
               <a href="https://blog.portaldomei.com.br/" target="_blank" class="footer__social-icon">
                 <svg xmlns="http://www.w3.org/2000/svg" width="34" height="35" viewBox="0 0 34 35" fill="none">
@@ -402,6 +423,52 @@
         direitos reservados.</p>
     </div>
   </footer>
+
+  <section class="modal modal__forgot" id="forgot-password-modal">
+    <div class="modal__overlay">
+      <div class="modal_container__content">
+        <div class="forgot-password-message" id="forgot-password">
+          <div class="forgot-password-header">
+            <svg width="115" height="114" viewBox="0 0 115 114" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M8.61723 53.8839C9.75807 53.2648 11.1463 53.3198 12.2346 54.0272L57.5 83.4497L102.765 54.0272C103.854 53.3198 105.242 53.2648 106.383 53.8839C107.524 54.5031 108.234 55.6969 108.234 56.9949V96.6812C108.234 101.183 104.82 105.369 99.975 105.369H15.025C10.1801 105.369 6.76595 101.183 6.76595 96.6812V56.9949C6.76595 55.6969 7.4764 54.5031 8.61723 53.8839ZM13.8451 63.5173V96.6812C13.8451 97.866 14.6569 98.2901 15.025 98.2901H99.975C100.343 98.2901 101.155 97.866 101.155 96.6812V63.5173L59.429 90.6391C58.256 91.4015 56.744 91.4015 55.571 90.6391L13.8451 63.5173Z"
+                fill="white" />
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M36.8176 38.2139C37.9269 39.8236 37.5213 42.0277 35.9117 43.137L12.3145 59.4C10.7049 60.5093 8.50072 60.1038 7.39139 58.4942C6.28206 56.8845 6.68762 54.6804 8.29724 53.5711L31.8945 37.3081C33.5041 36.1988 35.7082 36.6043 36.8176 38.2139ZM78.1831 38.2139C79.2924 36.6043 81.4966 36.1988 83.1062 37.3081L106.703 53.5711C108.313 54.6804 108.719 56.8845 107.609 58.4942C106.5 60.1038 104.296 60.5093 102.686 59.4L79.0889 43.137C77.4793 42.0277 77.0738 39.8236 78.1831 38.2139Z"
+                fill="white" />
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M30.3632 12.1602C30.3632 10.2053 31.9479 8.62061 33.9028 8.62061H81.0972C83.0521 8.62061 84.6368 10.2053 84.6368 12.1602V69.7719C84.6368 72.5672 83.223 75.1731 80.8789 76.6967C80.8789 76.6967 80.879 76.6966 80.8789 76.6967L62.0011 88.9672C59.2641 90.7462 55.7359 90.7462 52.9989 88.9673L34.1212 76.6967C34.1212 76.6967 34.1213 76.6968 34.1212 76.6967C31.7771 75.1732 30.3632 72.5672 30.3632 69.7719V12.1602ZM37.4423 15.6998V69.7719C37.4423 70.1715 37.6444 70.5436 37.979 70.7611L56.8569 83.0317C56.8568 83.0317 56.8569 83.0317 56.8569 83.0317C57.2479 83.2858 57.7521 83.2858 58.1431 83.0317C58.143 83.0317 58.1431 83.0317 58.1431 83.0317L77.0209 70.7612C77.3554 70.5437 77.5576 70.1715 77.5576 69.7719V15.6998H37.4423Z"
+                fill="white" />
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M44.5215 31.038C44.5215 29.0831 46.1062 27.4984 48.0611 27.4984H57.5C59.4549 27.4984 61.0396 29.0831 61.0396 31.038C61.0396 32.9928 59.4549 34.5776 57.5 34.5776H48.0611C46.1062 34.5776 44.5215 32.9928 44.5215 31.038Z"
+                fill="white" />
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M44.5215 45.1963C44.5215 43.2415 46.1062 41.6567 48.0611 41.6567H66.9389C68.8937 41.6567 70.4785 43.2415 70.4785 45.1963C70.4785 47.1512 68.8937 48.7359 66.9389 48.7359H48.0611C46.1062 48.7359 44.5215 47.1512 44.5215 45.1963Z"
+                fill="white" />
+            </svg>
+          </div>
+          <div class="forgot-password-content">
+            <h2 class="modal__content_title">E-mail enviado!</h2>
+            <p>Enviaremos um e-mail para</p>
+            <b id="email-user"></b>
+            <p>com o link para você redefinir sua senha.</p>
+            <button type="submit" id="close-ebook-modal-success"
+              class="register__submit button button--primary">Entendi</button>
+          </div>
+        </div>
+        <button class="btn-close-modal" id="close-forgot-modal">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="#fff">
+            <path fill-rule="evenodd" fill="#fff" clip-rule="evenodd"
+              d="M2.31312 2.31295C2.50838 2.11769 2.82496 2.11769 3.02023 2.31295L13.6869 12.9796C13.8822 13.1749 13.8822 13.4915 13.6869 13.6867C13.4916 13.882 13.175 13.882 12.9798 13.6867L2.31312 3.02006C2.11786 2.8248 2.11786 2.50821 2.31312 2.31295Z"
+              fill="#002C43" />
+            <path fill-rule="evenodd" fill="#fff" clip-rule="evenodd"
+              d="M13.6869 2.31295C13.8822 2.50821 13.8822 2.8248 13.6869 3.02006L3.02023 13.6867C2.82496 13.882 2.50838 13.882 2.31312 13.6867C2.11786 13.4915 2.11786 13.1749 2.31312 12.9796L12.9798 2.31295C13.175 2.11769 13.4916 2.11769 13.6869 2.31295Z"
+              fill="#002C43" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </section>
 <script type="text/javascript" src="./js/portalmei-1.0.0.min.js"></script></body>
 
 </html>

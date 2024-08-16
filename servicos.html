@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portal Mei</title>
   <link rel="stylesheet" href="./css/reset.css">
-<link href="./css/portalmei-1.0.0.min.css" rel="stylesheet"></head>
+</head>
 
 
 <body>
@@ -63,61 +63,42 @@
       </button>
       <ul class="menu__nav-list flex flex--center">
         <li class="menu__nav-item">
-          <a href="#" class="menu__nav-link menu__nav-link--sublist">Institucional</a>
+          <a href="/quem-somos.html" class="menu__nav-link ">Quem somos</a>
+        </li>
+        <li class="menu__nav-item">
+          <a href="/servicos.html" class="menu__nav-link menu__nav-link--sublist">Serviços</a>
           <ul class="menu__sublist">
             <li class="menu__subitem">
-              <a href="./quem-somos.html" class="menu__sublink">Quem somos</a>
+              <a href="/emissao-das.html" class="menu__sublink">Emissão DAS</a>
             </li>
             <li class="menu__subitem">
-              <a href="./pontos-de-atendimento.html" class="menu__sublink">Pontos de atendimento</a>
+              <a href="/nf-servico.html" class="menu__sublink">NF de serviço</a>
+            </li>
+            <li class="menu__subitem">
+              <a href="/nf-produto.html" class="menu__sublink">NF de produto</a>
+            </li>
+            <li class="menu__subitem">
+              <a href="/fincancas-mei.html" class="menu__sublink">Finanças MEI</a>
+            </li>
+            <li class="menu__subitem">
+              <a href="/declaracao-das.html" class="menu__sublink">Declaração DASN</a>
+            </li>
+            <li class="menu__subitem">
+              <a href="#" class="menu__sublink">Contabilidade</a>
+            </li>
+            <li class="menu__subitem">
+              <a href="/servicos-adicionais.html" class="menu__sublink">Serviços adicionais</a>
             </li>
           </ul>
         </li>
         <li class="menu__nav-item">
-          <a href="#" class="menu__nav-link menu__nav-link--sublist">Serviços</a>
-          <ul class="menu__sublist">
-            <li class="menu__subitem">
-              <a href="./abrir-cnpj-mei.html" class="menu__sublink">Abertura de CNPJ MEI</a>
-            </li>
-            <li class="menu__subitem">
-              <a href="./emissao-de-guia-das.html" class="menu__sublink">Emissão de guia DAS</a>
-            </li>
-            <li class="menu__subitem">
-              <a href="./notas-fiscais-de-produtos.html" class="menu__sublink">Notas fiscais de produtos</a>
-            </li>
-            <li class="menu__subitem">
-              <a href="./notas-fiscais-de-servicos.html" class="menu__sublink">Notas fiscais de serviços</a>
-            </li>
-            <li class="menu__subitem">
-              <a href="./financas-mei.html" class="menu__sublink">Finanças MEI</a>
-            </li>
-            <li class="menu__subitem">
-              <a href="./declaracao-anual-dasn.html" class="menu__sublink">Declaração anual DASN</a>
-            </li>
-            <li class="menu__subitem">
-              <a href="./servicos-adicionais.html" class="menu__sublink">Serviços adicionais</a>
-            </li>
-          </ul>
+          <a href="/blog.html" class="menu__nav-link">Blog</a>
         </li>
         <li class="menu__nav-item">
-          <a href="#" class="menu__nav-link menu__nav-link--sublist">Benefícios</a>
-          <ul class="menu__sublist">
-            <li class="menu__subitem">
-              <a href="./cursos-exclusivos.html" class="menu__sublink">Cursos exclusivos</a>
-            </li>
-            <li class="menu__subitem">
-              <a href="./clube-de-descontos.html" class="menu__sublink">Clube de descontos</a>
-            </li>
-          </ul>
+          <a href="/faq.html" class="menu__nav-link">Dúvidas</a>
         </li>
         <li class="menu__nav-item">
-          <a href="https://blog.portaldomei.com.br/" class="menu__nav-link">Blog</a>
-        </li>
-        <li class="menu__nav-item">
-          <a href="./faq.html" class="menu__nav-link">Dúvidas</a>
-        </li>
-        <li class="menu__nav-item">
-          <a href="./contato.html" class="menu__nav-link">Contato</a>
+          <a href="/contato.html" class="menu__nav-link">Contato</a>
         </li>
         <li class="menu__nav-item menu__nav-item--login">
           <button class="menu__nav-link menu__nav-link--login flex flex--center js-toggle-login">
@@ -133,7 +114,7 @@
                 </clipPath>
               </defs>
             </svg>
-            <span>Olá! Faça seu Login</span>
+            <span>Olá! Faça seu Login.</span>
           </button>
           <div class="login__content">
             <button class="login__close js-toggle-login">
@@ -167,8 +148,8 @@
               <label for="password" class="login__label">Senha</label>
               <input type="password" id="password" class="login__input">
               <button class="button button--primary">Entrar</button>
-              <a href="/esqueci-minha-senha.html" class="login__forgot">Esqueci minha senha</a>
-              <a href="/planos.html" class="login__create">Criar uma conta</a>
+              <a href="#" class="login__forgot">Esqueci minha senha</a>
+              <a href="#" class="login__create">Criar uma conta</a>
             </form>
           </div>
         </li>
@@ -176,60 +157,312 @@
     </nav>
   </header>
   <main>
-    <!-- Conteúdo -->
+    <section class="banner-tv__main container">
+      <picture>
+        <source srcset="/img/banner-services-mob.png" media="(max-width:968px)">
+        <source srcset="/img/banner-services.png" media="(min-width:1024px)"><img decoding="async"
+          src="/img/banner-services.png" alt="Banner" loading="lazy">
+      </picture>
+    </section>
+    <section class="services">
+      <div class="container flex flex--middle flex--center">
+        <img src="/img/services-phones.png" alt="abrir seu CNPJ MEI" />
+        <div class="services__text">
+          <h2 class="services__title">Veja como é fácil </br> abrir seu CNPJ MEI</h2>
+          <p class="services__subtitle">No <strong>Portal do MEI</strong>, você abre seu CNPJ MEI sem complicações. Tudo
+            feito 100% online por nossa equipe de especialistas. Veja quais são as exigências para a abertura do seu
+            MEI.</p>
+
+          <ul class="services__list">
+            <li class="services__item flex flex--middle">
+
+              <span>Ser maior de 18 anos.</span>
+            </li>
+            <li class="services__item flex flex--middle">
+
+              <span>Ter uma conta gov.br, RG, CPF e endereço residencial.
+              </span>
+            </li>
+            <li class="services__item flex flex--middle">
+              <span>Não ter sócios e não ser funcionário público federal.</span>
+            </li>
+            <li class="services__item flex flex--middle">
+              <span>Exercer uma das atividades permitidas pelo MEI.
+              </span>
+            </li>
+            <li class="services__item flex flex--middle">
+              <span>Faturar até R$ 81.000,00 por ano.
+              </span>
+            </li>
+          </ul>
+          <a class="button button--primary flex flex--middle flex--center">Abrir CNPJ MEI </a>
+        </div>
+      </div>
+    </section>
+    <section class="benefits">
+      <div class="container">
+
+
+        <h2 class="benefits__title">Descubra as vantagens de se tornar MEI</h2>
+        <ul class="benefits__list flex">
+          <li class="benefits__item ">
+            <i class="benefits__icon"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48"
+                fill="none">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M10.0002 10.5C10.5271 10.5 11.0154 10.7764 11.2865 11.2283L17.2865 21.2283C17.7127 21.9386 17.4823 22.86 16.772 23.2862C16.0616 23.7125 15.1402 23.4821 14.714 22.7717L10.0002 14.9155L5.28647 22.7717C4.86024 23.4821 3.93885 23.7125 3.22848 23.2862C2.51811 22.86 2.28777 21.9386 2.71399 21.2283L8.71399 11.2283C8.98507 10.7764 9.47333 10.5 10.0002 10.5Z"
+                  fill="#00547A" />
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M2.5 22C2.5 21.1716 3.17157 20.5 4 20.5H16C16.8284 20.5 17.5 21.1716 17.5 22C17.5 26.1421 14.1421 29.5 10 29.5C5.85786 29.5 2.5 26.1421 2.5 22ZM5.75606 23.5C6.37382 25.2478 8.04067 26.5 10 26.5C11.9593 26.5 13.6262 25.2478 14.2439 23.5H5.75606Z"
+                  fill="#00547A" />
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M38.0002 10.5C38.5271 10.5 39.0154 10.7764 39.2865 11.2283L45.2865 21.2283C45.7127 21.9386 45.4823 22.86 44.772 23.2862C44.0616 23.7125 43.1402 23.4821 42.714 22.7717L38.0002 14.9155L33.2865 22.7717C32.8602 23.4821 31.9389 23.7125 31.2285 23.2862C30.5181 22.86 30.2878 21.9386 30.714 21.2283L36.714 11.2283C36.9851 10.7764 37.4733 10.5 38.0002 10.5Z"
+                  fill="#00547A" />
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M30.5 22C30.5 21.1716 31.1716 20.5 32 20.5H44C44.8284 20.5 45.5 21.1716 45.5 22C45.5 26.1421 42.1421 29.5 38 29.5C33.8579 29.5 30.5 26.1421 30.5 22ZM33.7561 23.5C34.3738 25.2478 36.0407 26.5 38 26.5C39.9593 26.5 41.6262 25.2478 42.2439 23.5H33.7561Z"
+                  fill="#00547A" />
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M24 4.5C24.8284 4.5 25.5 5.17157 25.5 6V42C25.5 42.8284 24.8284 43.5 24 43.5C23.1716 43.5 22.5 42.8284 22.5 42V6C22.5 5.17157 23.1716 4.5 24 4.5Z"
+                  fill="#00547A" />
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M8.5 12C8.5 11.1716 9.1718 10.5 10.0002 10.5H38.0002C38.8287 10.5 39.5 11.1716 39.5 12C39.5 12.8284 38.8284 13.5 38 13.5H10C9.17157 13.5 8.5 12.8284 8.5 12Z"
+                  fill="#00547A" />
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M8.5 12C8.5 11.1716 9.1718 10.5 10.0002 10.5H38.0002C38.8287 10.5 39.5 11.1716 39.5 12C39.5 12.8284 38.8284 13.5 38 13.5H10C9.17157 13.5 8.5 12.8284 8.5 12Z"
+                  fill="#00547A" />
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M8.5 42C8.5 41.1716 9.17157 40.5 10 40.5H38C38.8284 40.5 39.5 41.1716 39.5 42C39.5 42.8284 38.8284 43.5 38 43.5H10C9.17157 43.5 8.5 42.8284 8.5 42Z"
+                  fill="#00547A" />
+              </svg></i>
+            <h3 class="benefits__item-title">Direitos e benefícios previdenciários</h3>
+            <p class="benefits__item-text">Tenha os benefícios garantidos por lei, como auxílio-doença,
+              salário-maternidade e aposentadoria.</p>
+          </li>
+          <li class="benefits__item">
+            <i class="benefits__icon"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48"
+                fill="none">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M7.53183 5.69407C7.67674 4.99849 8.28979 4.5 9.0003 4.5H39.0003C39.7108 4.5 40.3239 4.99849 40.4688 5.69407L45.4688 29.6941C45.6377 30.5051 45.1172 31.2995 44.3062 31.4685C43.4952 31.6374 42.7008 31.1169 42.5318 30.3059L37.7806 7.5H10.22L5.46877 30.3059C5.29981 31.1169 4.50538 31.6374 3.69437 31.4685C2.88336 31.2995 2.36287 30.5051 2.53183 29.6941L7.53183 5.69407Z"
+                  fill="#00547A" />
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M2.5003 30C2.5003 29.1716 3.17187 28.5 4.0003 28.5H14.9094C15.5703 28.5 16.1533 28.9325 16.3449 29.565L17.8404 34.5H30.1602L31.6557 29.565C31.8473 28.9325 32.4303 28.5 33.0912 28.5H44.0003C44.8287 28.5 45.5003 29.1716 45.5003 30V43C45.5003 43.8284 44.8287 44.5 44.0003 44.5H4.0003C3.17187 44.5 2.5003 43.8284 2.5003 43V30ZM5.5003 31.5V41.5H42.5003V31.5H34.204L32.7086 36.435C32.5169 37.0675 31.9339 37.5 31.273 37.5H16.7276C16.0667 37.5 15.4837 37.0675 15.292 36.435L13.7966 31.5H5.5003Z"
+                  fill="#00547A" />
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M16.9396 21.0607C17.5254 21.6464 18.4752 21.6464 19.061 21.0607L24.0003 16.1213L28.9396 21.0607C29.5254 21.6464 30.4752 21.6464 31.061 21.0607C31.6467 20.4749 31.6467 19.5251 31.061 18.9393L25.061 12.9393C24.4752 12.3536 23.5254 12.3536 22.9396 12.9393L16.9396 18.9393C16.3539 19.5251 16.3539 20.4749 16.9396 21.0607Z"
+                  fill="#00547A" />
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M24.0003 12.5C24.8287 12.5 25.5003 13.1716 25.5003 14V26C25.5003 26.8284 24.8287 27.5 24.0003 27.5C23.1719 27.5 22.5003 26.8284 22.5003 26V14C22.5003 13.1716 23.1719 12.5 24.0003 12.5Z"
+                  fill="#00547A" />
+              </svg></i>
+            <h3 class="benefits__item-title">Emissão
+              de NFs</h3>
+            <p class="benefits__item-text">Ao emitir nota fiscal, o MEI atende às demandas dos clientes e evita perdas
+              de
+              negócio.</p>
+          </li>
+          <li class="benefits__item">
+            <i class="benefits__icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M6.5 6C6.5 4.067 8.067 2.5 10 2.5H38C39.933 2.5 41.5 4.06702 41.5 6V27C41.5 27.8284 40.8284 28.5 40 28.5C39.1716 28.5 38.5 27.8284 38.5 27V6C38.5 5.72384 38.2762 5.5 38 5.5H10C9.72386 5.5 9.5 5.72386 9.5 6V42C9.5 42.2762 9.72384 42.5 10 42.5H21C21.8284 42.5 22.5 43.1716 22.5 44C22.5 44.8284 21.8284 45.5 21 45.5H10C8.06702 45.5 6.5 43.933 6.5 42V6Z"
+                  fill="#00547A" />
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M15.5 12C15.5 11.1716 16.1716 10.5 17 10.5H31C31.8284 10.5 32.5 11.1716 32.5 12C32.5 12.8284 31.8284 13.5 31 13.5H17C16.1716 13.5 15.5 12.8284 15.5 12Z"
+                  fill="#00547A" />
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M15.5 20C15.5 19.1716 16.1716 18.5 17 18.5H31C31.8284 18.5 32.5 19.1716 32.5 20C32.5 20.8284 31.8284 21.5 31 21.5H17C16.1716 21.5 15.5 20.8284 15.5 20Z"
+                  fill="#00547A" />
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M15.5 28C15.5 27.1716 16.1716 26.5 17 26.5H23C23.8284 26.5 24.5 27.1716 24.5 28C24.5 28.8284 23.8284 29.5 23 29.5H17C16.1716 29.5 15.5 28.8284 15.5 28Z"
+                  fill="#00547A" />
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M33.3827 30C33.6926 30 33.9438 30.2512 33.9438 30.5612V47.0222C33.9438 47.3321 33.6926 47.5833 33.3827 47.5833C33.0727 47.5833 32.8215 47.3321 32.8215 47.0222V30.5612C32.8215 30.2512 33.0727 30 33.3827 30Z"
+                  fill="#00547A" />
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M27.958 35.4246C27.958 33.2552 29.7167 31.4965 31.8862 31.4965H37.4977L37.4979 32.6188H31.8862C30.3366 32.6188 29.0803 33.875 29.0803 35.4246C29.0803 36.9743 30.3366 38.2305 31.8862 38.2305C32.1961 38.2305 32.4474 38.4817 32.4474 38.7917C32.4474 39.1016 32.1961 39.3528 31.8862 39.3528C29.7167 39.3528 27.958 37.5941 27.958 35.4246ZM38.0591 32.0576C38.0591 32.3675 37.8078 32.6188 37.4979 32.6188L37.4977 31.4965C37.8077 31.4965 38.0591 31.7477 38.0591 32.0576Z"
+                  fill="#00547A" />
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M31.325 38.7917C31.325 38.4817 31.5763 38.2305 31.8862 38.2305H34.8791C37.0486 38.2305 38.8073 39.9892 38.8073 42.1587C38.8073 44.3282 37.0486 46.0869 34.8791 46.0869H29.2676L29.2674 44.9645H34.8791C36.4287 44.9645 37.685 43.7083 37.685 42.1587C37.685 40.609 36.4287 39.3528 34.8791 39.3528H31.8862C31.5763 39.3528 31.325 39.1016 31.325 38.7917ZM28.7062 45.5257C28.7062 45.2158 28.9575 44.9645 29.2674 44.9645L29.2676 46.0869C28.9577 46.0869 28.7062 45.8356 28.7062 45.5257Z"
+                  fill="#00547A" />
+                <path
+                  d="M37.4977 31.4965H31.8862C29.7167 31.4965 27.958 33.2552 27.958 35.4246C27.958 37.5941 29.7167 39.3528 31.8862 39.3528M37.4977 31.4965C37.8077 31.4965 38.0591 31.7477 38.0591 32.0576C38.0591 32.3675 37.8078 32.6188 37.4979 32.6188M37.4977 31.4965L37.4979 32.6188M37.4979 32.6188H31.8862C30.3366 32.6188 29.0803 33.875 29.0803 35.4246C29.0803 36.9743 30.3366 38.2305 31.8862 38.2305M31.8862 38.2305C32.1961 38.2305 32.4474 38.4817 32.4474 38.7917C32.4474 39.1016 32.1961 39.3528 31.8862 39.3528M31.8862 38.2305C31.5763 38.2305 31.325 38.4817 31.325 38.7917C31.325 39.1016 31.5763 39.3528 31.8862 39.3528M31.8862 38.2305H34.8791C37.0486 38.2305 38.8073 39.9892 38.8073 42.1587C38.8073 44.3282 37.0486 46.0869 34.8791 46.0869H29.2676M31.8862 39.3528H34.8791C36.4287 39.3528 37.685 40.609 37.685 42.1587C37.685 43.7083 36.4287 44.9645 34.8791 44.9645H29.2674M29.2676 46.0869C28.9577 46.0869 28.7062 45.8356 28.7062 45.5257C28.7062 45.2158 28.9575 44.9645 29.2674 44.9645M29.2676 46.0869L29.2674 44.9645M33.3827 30C33.6926 30 33.9438 30.2512 33.9438 30.5612V47.0222C33.9438 47.3321 33.6926 47.5833 33.3827 47.5833C33.0727 47.5833 32.8215 47.3321 32.8215 47.0222V30.5612C32.8215 30.2512 33.0727 30 33.3827 30Z"
+                  stroke="#00547A" stroke-width="0.664583" stroke-linecap="round" stroke-linejoin="round" />
+              </svg></i>
+            <h3 class="benefits__item-title">Tributação simplificada
+              e acessível </h3>
+            <p class="benefits__item-text">Tenha um CNPJ com baixo custo mensal de tributos (INSS, ISS e ICMS). </p>
+          </li>
+          <li class="benefits__item">
+            <i class="benefits__icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M2.5 44C2.5 43.1716 3.17157 42.5 4 42.5H44C44.8284 42.5 45.5 43.1716 45.5 44C45.5 44.8284 44.8284 45.5 44 45.5H4C3.17157 45.5 2.5 44.8284 2.5 44Z"
+                  fill="#00547A" />
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M23.6053 2.55285C23.8637 2.48238 24.1363 2.48238 24.3947 2.55285L40.3947 6.91649C41.0473 7.09447 41.5 7.68721 41.5 8.36364V14C41.5 14.8284 40.8284 15.5 40 15.5H8C7.17157 15.5 6.5 14.8284 6.5 14V8.36364C6.5 7.68721 6.95273 7.09447 7.60532 6.91649L23.6053 2.55285ZM9.5 9.50933V12.5H38.5V9.50933L24 5.55478L9.5 9.50933Z"
+                  fill="#00547A" />
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M10 12.5C10.8284 12.5 11.5 13.1716 11.5 14V38C11.5 38.8284 10.8284 39.5 10 39.5C9.17157 39.5 8.5 38.8284 8.5 38V14C8.5 13.1716 9.17157 12.5 10 12.5Z"
+                  fill="#00547A" />
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M17 12.5C17.8284 12.5 18.5 13.1716 18.5 14V38C18.5 38.8284 17.8284 39.5 17 39.5C16.1716 39.5 15.5 38.8284 15.5 38V14C15.5 13.1716 16.1716 12.5 17 12.5Z"
+                  fill="#00547A" />
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M24 12.5C24.8284 12.5 25.5 13.1716 25.5 14V38C25.5 38.8284 24.8284 39.5 24 39.5C23.1716 39.5 22.5 38.8284 22.5 38V14C22.5 13.1716 23.1716 12.5 24 12.5Z"
+                  fill="#00547A" />
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M31 12.5C31.8284 12.5 32.5 13.1716 32.5 14V38C32.5 38.8284 31.8284 39.5 31 39.5C30.1716 39.5 29.5 38.8284 29.5 38V14C29.5 13.1716 30.1716 12.5 31 12.5Z"
+                  fill="#00547A" />
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M38 12.5C38.8284 12.5 39.5 13.1716 39.5 14V38C39.5 38.8284 38.8284 39.5 38 39.5C37.1716 39.5 36.5 38.8284 36.5 38V14C36.5 13.1716 37.1716 12.5 38 12.5Z"
+                  fill="#00547A" />
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M5.5 38C5.5 37.1716 6.17157 36.5 7 36.5H41C41.8284 36.5 42.5 37.1716 42.5 38V44C42.5 44.8284 41.8284 45.5 41 45.5H7C6.17157 45.5 5.5 44.8284 5.5 44V38ZM8.5 39.5V42.5H39.5V39.5H8.5Z"
+                  fill="#00547A" />
+              </svg>
+            </i>
+            <h3 class="benefits__item-title">Crédito bancário
+              especial </h3>
+            <p class="benefits__item-text">Bancos públicos oferecem empréstimos com taxas e juros personalizados ao MEI.
+            </p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="management">
+      <div class="container flex flex--center flex--middle">
+        <div class="management__box-content">
+          <h2 class="management__title">
+            Abra e gerencie seu</br> CNPJ MEI no Portal do MEI
+          </h2>
+          <h3 class="management__subtitle">
+            Todos os recursos disponíveis em um só lugar,</br> sem custos adicionais!
+          </h3>
+          <ul class="management__list js-accordion slide slide-only-mobile">
+            <li class="management__item js-accordion-area slide-item is-active">
+              <img class="management__item-img" src="/img/services-nfe.png" alt="" />
+              <h4 class="management__item-title js-accordion-toggle">Emissão de NFs de serviço e produto</h4>
+              <p class="management__item-subtitle">
+                O Portal do MEI é a única plataforma que permite a emissão de notas fiscais de serviço e produto.
+                Cadastre seus contatos, produtos e emita suas NFs de forma rápida e fácil.
+              </p>
+            </li>
+            <li class="management__item js-accordion-area slide-item">
+              <img class="management__item-img" src="/img/services-das.png" alt="" />
+              <h4 class="management__item-title js-accordion-toggle">Emissão e/ou parcelamento de guias DAS</h4>
+              <p class="management__item-subtitle">
+                O Portal do MEI é a única plataforma que permite a emissão de notas fiscais de serviço e produto.
+                Cadastre seus contatos, produtos e emita suas NFs de forma rápida e fácil.
+              </p>
+            </li>
+            <li class="management__item js-accordion-area slide-item">
+              <img class="management__item-img" src="/img/services-monitor.png" alt="" />
+              <h4 class="management__item-title js-accordion-toggle">Declaração anual DASN</h4>
+              <p class="management__item-subtitle">
+                O Portal do MEI é a única plataforma que permite a emissão de notas fiscais de serviço e produto.
+                Cadastre seus contatos, produtos e emita suas NFs de forma rápida e fácil.
+              </p>
+            </li>
+            <li class="management__item js-accordion-area slide-item">
+              <img class="management__item-img" src="/img/services-phone.png" alt="" />
+              <h4 class="management__item-title js-accordion-toggle">Atendimento humanizado</h4>
+              <p class="management__item-subtitle">
+                O Portal do MEI é a única plataforma que permite a emissão de notas fiscais de serviço e produto.
+                Cadastre seus contatos, produtos e emita suas NFs de forma rápida e fácil.
+              </p>
+            </li>
+            <li class="management__item js-accordion-area slide-item">
+              <img class="management__item-img" src="/img/services-course.png" alt="" />
+              <h4 class="management__item-title js-accordion-toggle">Cursos exclusivos</h4>
+              <p class="management__item-subtitle">
+                O Portal do MEI é a única plataforma que permite a emissão de notas fiscais de serviço e produto.
+                Cadastre seus contatos, produtos e emita suas NFs de forma rápida e fácil.
+              </p>
+            </li>
+            <div class="slide-dots"></div>
+          </ul>
+        </div>
+        <div class="management__box-img">
+          <img class="management__img js-change-img" src="/img/services-nfe.png" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <section class="pricing no-pricing">
+      <div class="container">
+        <h2 class="pricing__subtitle">Ter um CNPJ MEI nunca foi tão fácil e rápido!</h2>
+        <div class="pricing__info flex flex--center flex--middle">
+          <div class="pricing__content">
+            <div class="pricing__box-text">
+              <h2 class="pricing__content-title">
+                <strong>Crie seu MEI</strong> de forma rápida e fácil
+              </h2>
+              <span>
+                <ul>
+                  <li>Abra seu MEI em minutos</li>
+                  <li>Emissão de guias DAS e NFS-e</li>
+                  <li>Um guia com tudo sobre MEI</li>
+                  <li>Conte com o suporte de especialistas</li>
+                </ul>
+                <a href="/quero-ser-mei.html" class=" button button--primary">Quero ser MEI</a>
+              </span>
+            </div>
+
+            <div class="pricing__content-description flex flex--middle ">
+              <img src="/img/model-1.png" alt="Imagem 1">
+            </div>
+          </div>
+          <div class="pricing__content pricing__content--invert">
+            <div class="pricing__box-text">
+              <h2 class="pricing__content-title">
+                <strong>Já tem MEI? </strong> simplifique sua vida
+              </h2>
+              <span>
+                <ul>
+                  <li>Centralize suas DAS e NFS-e</li>
+                  <li>Evite multas e pagamentos indevidos</li>
+                  <li>Suporte especializado</li>
+                  <li>Cursos exclusivos sobre MEI</li>
+                </ul>
+                <a href="/ja-sou-mei.html" class="button button--primary">Cadastre-se agora</a>
+              </span>
+            </div>
+            <div class="pricing__content-description flex flex--middle flex--row-reverse">
+              <img src="/img/model-2.png" alt="Imagem 2" />
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
   </main>
   <footer class="footer">
     <div class="container">
       <div class="footer__media flex flex--between flex--middle">
+
         <div class="footer__logo flex flex--middle">
           <img src="./img/logo-associacao-comercial-white.png" alt="Associação Comercial" class="footer__logo-image" />
           <span class="footer__separator"></span>
-          <svg xmlns="http://www.w3.org/2000/svg" width="136" height="23" viewBox="0 0 136 23" fill="none">
-            <path
-              d="M20.5731 0.368584L25.4626 2.0062C25.7288 2.10246 25.9603 2.28535 26.1242 2.52903C26.2881 2.77271 26.3765 3.06507 26.3765 3.36478V19.8233C26.3755 20.1357 26.2802 20.4395 26.1023 20.6884C25.9255 20.9372 25.6762 21.1175 25.3941 21.2019L20.5045 22.5604C20.3049 22.62 20.0953 22.6295 19.8916 22.5883C19.688 22.547 19.4952 22.4561 19.3303 22.3226C19.1644 22.1892 19.0303 22.0168 18.9379 21.8189C18.8455 21.621 18.7969 21.4029 18.7969 21.1819V1.72388C18.7969 1.49619 18.8485 1.27188 18.9459 1.06953C19.0432 0.867071 19.1853 0.692433 19.3591 0.559913C19.532 0.427493 19.7327 0.340967 19.9443 0.307689C20.1558 0.27441 20.3714 0.295271 20.5731 0.368584Z"
-              fill="#FEC654" />
-            <path
-              d="M11.0877 2.57399L15.9802 4.21161C16.2464 4.30797 16.4779 4.49075 16.6418 4.73444C16.8057 4.97822 16.8931 5.27047 16.8931 5.57018V18.0469C16.8931 18.3593 16.7967 18.6631 16.6199 18.9119C16.4431 19.1608 16.1938 19.3411 15.9116 19.4254L11.0221 20.784C10.8224 20.8436 10.6128 20.8531 10.4092 20.8119C10.2045 20.7706 10.0128 20.6797 9.84791 20.5462C9.68201 20.4128 9.54791 20.2403 9.45553 20.0424C9.36314 19.8445 9.31447 19.6266 9.31447 19.4055V3.93256C9.31347 3.70498 9.36413 3.48057 9.46149 3.27791C9.55884 3.07526 9.69989 2.90022 9.87374 2.7674C10.0466 2.63449 10.2473 2.54766 10.4589 2.51409C10.6695 2.48041 10.885 2.50097 11.0877 2.57399Z"
-              fill="#E9655F" />
-            <path
-              d="M2.13072 3.65692L7.02023 5.29464C7.28646 5.3909 7.51792 5.57378 7.68183 5.81747C7.84574 6.06115 7.93315 6.35341 7.93315 6.65321V16.6418C7.93315 16.9543 7.8368 17.2581 7.65997 17.5069C7.48216 17.7557 7.23381 17.936 6.95168 18.0204L2.06217 19.379C1.8625 19.4386 1.65188 19.4481 1.44824 19.4069C1.24459 19.3656 1.05288 19.2747 0.88698 19.1412C0.722075 19.0077 0.587954 18.8353 0.495568 18.6374C0.403181 18.4395 0.354507 18.2216 0.354507 18.0004V5.01559C0.353513 4.78771 0.404179 4.5631 0.502525 4.36025C0.599878 4.15749 0.74095 3.98236 0.914795 3.84954C1.08864 3.71672 1.2893 3.6299 1.5009 3.59642C1.71249 3.56294 1.92806 3.58371 2.13072 3.65692Z"
-              fill="#58C5C6" />
-            <path
-              d="M40.2254 8.75305C40.2254 10.0817 39.8013 11.1015 38.9539 11.8123C38.1065 12.521 36.9055 12.8754 35.3508 12.8754H33.3571V18.5589H32.4561V4.80011H35.6161C38.6886 4.80011 40.2254 6.11776 40.2254 8.75305ZM35.1303 12.0483C36.5826 12.0483 37.6356 11.7925 38.2804 11.2809C38.9261 10.7694 39.2529 9.93887 39.2529 8.79288C39.2529 7.73322 38.9469 6.94705 38.334 6.43435C37.7231 5.92285 36.7724 5.66705 35.4919 5.66705H33.3541V12.0483H35.1303Z"
-              fill="white" />
-            <path
-              d="M50.4598 13.4295C50.4598 15.0971 50.0803 16.4004 49.3223 17.3394C48.5644 18.2783 47.5153 18.7478 46.1782 18.7478C45.3934 18.7645 44.6206 18.5396 43.953 18.1C43.2964 17.6509 42.7828 17.001 42.4788 16.2355C42.1232 15.3505 41.9483 14.3946 41.9672 13.4319C41.9672 11.7644 42.3467 10.4644 43.1046 9.53213C43.4951 9.06523 43.9788 8.69727 44.5192 8.45528C45.0597 8.21329 45.6448 8.10342 46.2309 8.13362C47.5491 8.13362 48.5832 8.60538 49.3343 9.54871C50.0853 10.4921 50.4608 11.7858 50.4598 13.4295ZM42.8841 13.4295C42.8841 14.8347 43.1732 15.9309 43.7533 16.7182C44.0613 17.0898 44.4398 17.3875 44.863 17.5914C45.2871 17.7953 45.7471 17.9007 46.212 17.9007C46.6769 17.9007 47.1369 17.7953 47.561 17.5914C47.9852 17.3875 48.3627 17.0898 48.6707 16.7182C49.2508 15.9309 49.5399 14.8347 49.5399 13.4295C49.5399 12.0178 49.2478 10.9227 48.6617 10.1444C48.3647 9.75703 47.9872 9.44967 47.558 9.24712C47.1289 9.04457 46.662 8.95248 46.1931 8.9784C45.7282 8.95128 45.2633 9.04258 44.8371 9.24473C44.411 9.44689 44.0364 9.75405 43.7434 10.141C43.1702 10.9149 42.8841 12.0112 42.8841 13.4295Z"
-              fill="white" />
-            <path
-              d="M56.605 8.13063C57.0431 8.13331 57.4802 8.17781 57.9114 8.26344L57.7425 9.15701C57.3362 9.04992 56.9189 8.99637 56.4997 8.99757C56.1044 8.9927 55.714 9.09134 55.3633 9.28476C55.0116 9.47827 54.7106 9.7606 54.4861 10.1071C53.9407 10.9232 53.6646 11.9092 53.7013 12.9107V18.5578H52.8281V8.3299H53.5702L53.6576 10.1736H53.7192C54.0123 9.54334 54.4464 8.99935 54.9818 8.58898C55.4696 8.27159 56.0338 8.11235 56.605 8.13063Z"
-              fill="white" />
-            <path
-              d="M62.1094 17.9176C62.5961 17.9245 63.0819 17.8744 63.5577 17.7681V18.5222C63.0839 18.6801 62.5902 18.7563 62.0935 18.7481C61.2461 18.7481 60.6203 18.5067 60.217 18.0239C59.8146 17.5411 59.613 16.7815 59.613 15.7451V9.13812H58.1914V8.59334L59.613 8.16816L60.055 5.85284H60.507V8.3276H63.3243V9.13812H60.507V15.6123C60.4653 16.2215 60.6014 16.8296 60.8964 17.3529C61.0385 17.5471 61.2242 17.7006 61.4358 17.7993C61.6474 17.8978 61.8789 17.9385 62.1094 17.9176Z"
-              fill="white" />
-            <path
-              d="M71.1687 18.5586L70.9472 16.9409H70.8757C70.4823 17.5171 69.9747 17.9946 69.3896 18.3394C68.8263 18.6244 68.2084 18.7643 67.5846 18.7479C66.7869 18.8008 66.0001 18.5249 65.3881 17.9774C65.1209 17.7022 64.9123 17.369 64.7772 17.0005C64.6421 16.6319 64.5825 16.2366 64.6024 15.8415C64.5885 15.3786 64.6898 14.9201 64.8944 14.512C65.1001 14.1038 65.402 13.7604 65.7716 13.5162C66.5504 12.9648 67.6789 12.6735 69.1561 12.6425L70.982 12.5861V11.9084C70.982 10.9352 70.7972 10.201 70.4277 9.70612C70.0571 9.2111 69.4601 8.96275 68.6356 8.96097C67.667 8.98242 66.7193 9.25372 65.8709 9.75161L65.5441 8.9411C66.5176 8.43317 67.5855 8.16307 68.6693 8.15045C69.7233 8.15045 70.5101 8.44172 71.0317 9.02415C71.5532 9.60648 71.8144 10.5167 71.8144 11.7546V18.5576L71.1687 18.5586ZM67.6382 17.901C68.0803 17.9266 68.5233 17.8569 68.9395 17.6959C69.3568 17.535 69.7382 17.2862 70.0621 16.9642C70.6551 16.3396 70.9512 15.4727 70.9512 14.3632V13.3568L69.2743 13.4332C67.9243 13.5029 66.9647 13.7254 66.3915 14.1075C66.1103 14.2919 65.8819 14.5546 65.7309 14.8671C65.5789 15.1797 65.5103 15.5302 65.5312 15.8813C65.5163 16.1577 65.558 16.4342 65.6534 16.6918C65.7487 16.9493 65.8948 17.1817 66.0825 17.3728C66.5216 17.7496 67.0759 17.938 67.6382 17.901Z"
-              fill="white" />
-            <path d="M75.506 18.5586H74.6328V3.91608H75.506V18.5586Z" fill="white" />
-            <path
-              d="M86.3513 8.13048C86.9731 8.11438 87.59 8.25316 88.1523 8.53568C88.7126 8.85943 89.1815 9.33646 89.5113 9.9176H89.5639C89.5302 9.12706 89.5123 8.3519 89.5113 7.59235V3.91608H90.3775V18.5586H89.8043L89.5828 16.9974H89.5113C89.1775 17.5572 88.7106 18.0137 88.1593 18.3209C87.6069 18.6281 86.989 18.7755 86.3672 18.7479C85.042 18.7479 84.0297 18.3084 83.3284 17.4292C82.627 16.55 82.2773 15.27 82.2783 13.5892C82.2783 11.8187 82.625 10.4667 83.3194 9.53326C84.0217 8.59986 85.032 8.13226 86.3513 8.13048ZM86.3513 8.97755C85.3042 8.97755 84.5165 9.36954 83.989 10.1534C83.4615 10.9374 83.1972 12.0757 83.1972 13.5683C83.1972 16.4693 84.2542 17.9186 86.3672 17.9165C87.448 17.9165 88.2427 17.581 88.7513 16.9099C89.2589 16.239 89.5123 15.1317 89.5113 13.5882V13.4288C89.5113 11.8476 89.2629 10.7104 88.7662 10.0172C88.2705 9.32395 87.4639 8.97854 86.3513 8.97854V8.97755Z"
-              fill="white" />
-            <path
-              d="M101.248 13.4295C101.248 15.0971 100.869 16.4004 100.11 17.3394C99.3525 18.2783 98.3044 18.7478 96.9663 18.7478C96.1815 18.7645 95.4087 18.5396 94.7411 18.1C94.0855 17.6509 93.5709 17.001 93.2669 16.2355C92.9112 15.3505 92.7374 14.3946 92.7563 13.4319C92.7563 11.7644 93.1358 10.4644 93.8937 9.53213C94.2841 9.06523 94.7669 8.69727 95.3073 8.45528C95.8487 8.21329 96.4339 8.10342 97.019 8.13362C98.3372 8.13362 99.3723 8.60538 100.123 9.54871C100.874 10.4921 101.249 11.7858 101.248 13.4295ZM93.6752 13.4295C93.6752 14.8347 93.9652 15.9309 94.5454 16.7182C94.8523 17.0898 95.2308 17.3875 95.655 17.5914C96.0792 17.7953 96.5391 17.9007 97.004 17.9007C97.469 17.9007 97.9289 17.7953 98.3521 17.5914C98.7763 17.3875 99.1548 17.0898 99.4627 16.7182C100.042 15.9309 100.332 14.8347 100.332 13.4295C100.332 12.0178 100.039 10.9227 99.4528 10.1444C99.1567 9.75703 98.7783 9.44967 98.3501 9.24712C97.921 9.04457 97.4531 8.95248 96.9852 8.9784C96.5193 8.95128 96.0544 9.04258 95.6292 9.24473C95.203 9.44689 94.8285 9.75405 94.5355 10.141C93.9623 10.9149 93.6752 12.0112 93.6752 13.4295Z"
-              fill="white" />
-            <path
-              d="M113.7 18.5589L109.958 7.06784H109.886C109.986 8.7753 110.035 10.3753 110.035 11.8679V18.5579H108.119V4.80011H111.095L114.679 15.7454H114.732L118.422 4.80011H121.407V18.5589H119.375V11.7559C119.375 11.0716 119.392 10.1803 119.425 9.08186C119.457 7.98565 119.485 7.31798 119.509 7.08543H119.438L115.561 18.5556H113.7V18.5589Z"
-              fill="white" />
-            <path
-              d="M131.514 18.5589H124.213V4.80011H131.514V6.70009H126.322V10.4471H131.187V12.3306H126.322V16.6489H131.514V18.5589Z"
-              fill="white" />
-            <path d="M133.709 18.5589V4.80011H135.818V18.5589H133.709Z" fill="white" />
-          </svg>
+          <img src="./img/logo-porta-mei-white.svg" alt="Portal Mei" class="footer__logo-image" />
         </div>
         <div class="footer__social">
           <h3 class="footer__social-title">Siga nas redes sociais</h3>
+
           <ul class="footer__social-icons flex flex--middle flex--center">
+            <!-- <li>
+                            <a href="#" class="footer__social-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="34" height="35" viewBox="0 0 34 35"
+                                    fill="none">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M17.25 0.952881C7.99923 0.952881 0.5 8.45211 0.5 17.7029C0.5 26.9537 7.99923 34.4529 17.25 34.4529C26.5008 34.4529 34 26.9537 34 17.7029C34 8.45211 26.5008 0.952881 17.25 0.952881ZM18.9958 18.4386V27.5515H15.2253V18.439H13.3416V15.2986H15.2253V13.4132C15.2253 10.8513 16.289 9.32788 19.311 9.32788H21.8269V12.4686H20.2543C19.0779 12.4686 19.0001 12.9075 19.0001 13.7265L18.9958 15.2983H21.8447L21.5114 18.4386H18.9958Z"
+                                        fill="white" />
+                                </svg>
+                            </a>
+                        </li> -->
             <li>
-              <a href="https://www.instagram.com/acsp_oficial/" target="_blank" class="footer__social-icon">
+              <a href="#" class="footer__social-icon">
                 <svg xmlns="http://www.w3.org/2000/svg" width="34" height="35" viewBox="0 0 34 35" fill="none">
                   <path fill-rule="evenodd" clip-rule="evenodd"
                     d="M16.75 0.952881C7.49923 0.952881 0 8.45211 0 17.7029C0 26.9537 7.49923 34.4529 16.75 34.4529C26.0008 34.4529 33.5 26.9537 33.5 17.7029C33.5 8.45211 26.0008 0.952881 16.75 0.952881ZM13.0673 8.82349C14.0202 8.78012 14.3246 8.76951 16.7508 8.76951H16.748C19.1749 8.76951 19.4783 8.78012 20.4312 8.82349C21.3822 8.86704 22.0318 9.0176 22.6013 9.23852C23.1894 9.46651 23.6863 9.77173 24.1832 10.2687C24.6802 10.7652 24.9854 11.2636 25.2143 11.8512C25.4339 12.4192 25.5847 13.0684 25.6293 14.0194C25.6721 14.9723 25.6833 15.2768 25.6833 17.7029C25.6833 20.1291 25.6721 20.4328 25.6293 21.3857C25.5847 22.3364 25.4339 22.9858 25.2143 23.554C24.9854 24.1413 24.6802 24.6397 24.1832 25.1363C23.6869 25.6332 23.1892 25.9392 22.6018 26.1674C22.0334 26.3883 21.3835 26.5388 20.4325 26.5824C19.4796 26.6258 19.176 26.6364 16.7497 26.6364C14.3237 26.6364 14.0194 26.6258 13.0665 26.5824C12.1157 26.5388 11.4663 26.3883 10.8979 26.1674C10.3107 25.9392 9.81232 25.6332 9.31596 25.1363C8.81922 24.6397 8.514 24.1413 8.28564 23.5538C8.06491 22.9858 7.91434 22.3366 7.87061 21.3856C7.82743 20.4327 7.81663 20.1291 7.81663 17.7029C7.81663 15.2768 7.8278 14.9721 7.87042 14.0192C7.91323 13.0685 8.06398 12.4192 8.28545 11.851C8.51437 11.2636 8.8196 10.7652 9.31652 10.2687C9.81307 9.77192 10.3115 9.46669 10.899 9.23852C11.4671 9.0176 12.1162 8.86704 13.0673 8.82349Z"
@@ -244,7 +477,7 @@
               </a>
             </li>
             <li>
-              <a href="https://www.youtube.com/@acspdigital" target="_blank" class="footer__social-icon">
+              <a href="#" class="footer__social-icon">
                 <svg xmlns="http://www.w3.org/2000/svg" width="34" height="35" viewBox="0 0 34 35" fill="none">
                   <path fill-rule="evenodd" clip-rule="evenodd"
                     d="M17.25 0.952881C7.99923 0.952881 0.5 8.45211 0.5 17.7029C0.5 26.9537 7.99923 34.4529 17.25 34.4529C26.5008 34.4529 34 26.9537 34 17.7029C34 8.45211 26.5008 0.952881 17.25 0.952881ZM24.2302 11.9446C24.999 12.1555 25.6045 12.7771 25.8099 13.5664C26.1833 14.9971 26.1833 17.982 26.1833 17.982C26.1833 17.982 26.1833 20.9669 25.8099 22.3976C25.6045 23.1869 24.999 23.8085 24.2302 24.0196C22.8371 24.4028 17.25 24.4028 17.25 24.4028C17.25 24.4028 11.6629 24.4028 10.2696 24.0196C9.50081 23.8085 8.89537 23.1869 8.6899 22.3976C8.31663 20.9669 8.31663 17.982 8.31663 17.982C8.31663 17.982 8.31663 14.9971 8.6899 13.5664C8.89537 12.7771 9.50081 12.1555 10.2696 11.9446C11.6629 11.5612 17.25 11.5612 17.25 11.5612C17.25 11.5612 22.8371 11.5612 24.2302 11.9446Z"
@@ -254,17 +487,17 @@
               </a>
             </li>
             <!-- <li>
-                                    <a href="#" class="footer__social-icon">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="34" height="35" viewBox="0 0 34 35"
-                                            fill="none">
-                                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                                d="M16.75 0.952881C7.49923 0.952881 0 8.45211 0 17.7029C0 26.9537 7.49923 34.4529 16.75 34.4529C26.0008 34.4529 33.5 26.9537 33.5 17.7029C33.5 8.45211 26.0008 0.952881 16.75 0.952881ZM8.04121 14.8259H11.8371V26.2311H8.04121V14.8259ZM12.087 11.2979C12.0624 10.1796 11.2627 9.32788 9.96414 9.32788C8.66559 9.32788 7.81663 10.1796 7.81663 11.2979C7.81663 12.393 8.64049 13.2693 9.91487 13.2693H9.93913C11.2627 13.2693 12.087 12.393 12.087 11.2979ZM21.1561 14.5582C23.654 14.5582 25.5266 16.1886 25.5266 19.6918L25.5265 26.2311H21.7307V20.1294C21.7307 18.5967 21.1814 17.5509 19.8073 17.5509C18.7586 17.5509 18.1339 18.256 17.8596 18.9369C17.7592 19.181 17.7346 19.521 17.7346 19.8619V26.2314H13.9382C13.9382 26.2314 13.9883 15.8965 13.9382 14.8263H17.7346V16.4417C18.2384 15.6652 19.1407 14.5582 21.1561 14.5582Z"
-                                                fill="white" />
-                                        </svg>
-                                    </a>
-                                </li> -->
+                            <a href="#" class="footer__social-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="34" height="35" viewBox="0 0 34 35"
+                                    fill="none">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M16.75 0.952881C7.49923 0.952881 0 8.45211 0 17.7029C0 26.9537 7.49923 34.4529 16.75 34.4529C26.0008 34.4529 33.5 26.9537 33.5 17.7029C33.5 8.45211 26.0008 0.952881 16.75 0.952881ZM8.04121 14.8259H11.8371V26.2311H8.04121V14.8259ZM12.087 11.2979C12.0624 10.1796 11.2627 9.32788 9.96414 9.32788C8.66559 9.32788 7.81663 10.1796 7.81663 11.2979C7.81663 12.393 8.64049 13.2693 9.91487 13.2693H9.93913C11.2627 13.2693 12.087 12.393 12.087 11.2979ZM21.1561 14.5582C23.654 14.5582 25.5266 16.1886 25.5266 19.6918L25.5265 26.2311H21.7307V20.1294C21.7307 18.5967 21.1814 17.5509 19.8073 17.5509C18.7586 17.5509 18.1339 18.256 17.8596 18.9369C17.7592 19.181 17.7346 19.521 17.7346 19.8619V26.2314H13.9382C13.9382 26.2314 13.9883 15.8965 13.9382 14.8263H17.7346V16.4417C18.2384 15.6652 19.1407 14.5582 21.1561 14.5582Z"
+                                        fill="white" />
+                                </svg>
+                            </a>
+                        </li> -->
             <li>
-              <a href="https://blog.portaldomei.com.br/" target="_blank" class="footer__social-icon">
+              <a href="#" class="footer__social-icon">
                 <svg xmlns="http://www.w3.org/2000/svg" width="34" height="35" viewBox="0 0 34 35" fill="none">
                   <path fill-rule="evenodd" clip-rule="evenodd"
                     d="M17.25 34.4529C26.5008 34.4529 34 26.9536 34 17.7029C34 8.45211 26.5008 0.952881 17.25 0.952881C7.99923 0.952881 0.5 8.45211 0.5 17.7029C0.5 26.9536 7.99923 34.4529 17.25 34.4529ZM4.15857 13.6844V21.0256H6.88338C7.41633 21.0256 7.89674 20.9506 8.3246 20.8004C8.75246 20.6428 9.094 20.4064 9.34922 20.0911C9.60443 19.7758 9.73204 19.3667 9.73204 18.8638C9.73204 18.3759 9.60443 17.9931 9.34922 17.7153C9.10151 17.4301 8.78999 17.2387 8.41468 17.1411V17.0961C8.71493 16.9835 8.94763 16.7733 9.11277 16.4655C9.28541 16.1503 9.37174 15.8312 9.37174 15.5085C9.37174 15.0356 9.25164 14.6677 9.01143 14.405C8.77123 14.1423 8.44846 13.9584 8.04311 13.8533C7.63777 13.7407 7.17988 13.6844 6.66945 13.6844H4.15857ZM6.59063 16.6232H5.81372V14.968H6.60189C6.99222 14.968 7.28122 15.0281 7.46888 15.1482C7.65653 15.2683 7.75036 15.4709 7.75036 15.7562C7.75036 16.0189 7.65653 16.2291 7.46888 16.3867C7.28872 16.5443 6.99597 16.6232 6.59063 16.6232ZM6.74826 19.742H5.81372V17.8504H6.74826C7.20615 17.8504 7.54769 17.9218 7.77288 18.0644C7.99807 18.1995 8.11067 18.4284 8.11067 18.7512C8.11067 19.4118 7.65653 19.742 6.74826 19.742ZM10.9759 13.6844V21.0256H15.536V19.6295H12.631V13.6844H10.9759ZM17.6353 20.6991C18.1382 21.0069 18.7199 21.1607 19.3805 21.1607C20.0411 21.1607 20.6191 21.0069 21.1145 20.6991C21.6174 20.3913 22.0077 19.9522 22.2855 19.3817C22.5707 18.8038 22.7133 18.1169 22.7133 17.3212C22.7133 16.5256 22.5707 15.8462 22.2855 15.2833C22.0077 14.7203 21.6174 14.2924 21.1145 13.9997C20.6191 13.6994 20.0411 13.5493 19.3805 13.5493C18.7199 13.5493 18.1382 13.6994 17.6353 13.9997C17.1399 14.2924 16.7495 14.7203 16.4643 15.2833C16.1865 15.8387 16.0477 16.5181 16.0477 17.3212C16.0477 18.1169 16.1865 18.8038 16.4643 19.3817C16.7495 19.9522 17.1399 20.3913 17.6353 20.6991ZM20.574 19.0777C20.2813 19.5131 19.8834 19.7308 19.3805 19.7308C18.8776 19.7308 18.4797 19.5131 18.187 19.0777C17.8942 18.6424 17.7479 18.0569 17.7479 17.3212C17.7479 16.5856 17.8942 16.0114 18.187 15.5985C18.4797 15.1857 18.8776 14.9793 19.3805 14.9793C19.8834 14.9793 20.2813 15.1857 20.574 15.5985C20.8668 16.0114 21.0131 16.5856 21.0131 17.3212C21.0131 18.0569 20.8668 18.6424 20.574 19.0777ZM25.5124 20.7329C26.0603 21.0181 26.6684 21.1607 27.3364 21.1607C27.8469 21.1607 28.3123 21.0744 28.7326 20.9018C29.1605 20.7291 29.502 20.519 29.7572 20.2712V16.8934H27.0775V18.2445H28.2935V19.5056C28.2034 19.5807 28.0871 19.637 27.9444 19.6745C27.8018 19.712 27.6554 19.7308 27.5053 19.7308C26.8222 19.7308 26.3081 19.5206 25.9628 19.1003C25.6175 18.6799 25.4448 18.0944 25.4448 17.3438C25.4448 16.6081 25.625 16.0302 25.9853 15.6098C26.3456 15.1894 26.811 14.9793 27.3815 14.9793C27.6967 14.9793 27.9595 15.0356 28.1696 15.1482C28.3798 15.2607 28.5787 15.3996 28.7664 15.5648L29.6334 14.5064C29.3932 14.2586 29.0817 14.0372 28.6988 13.842C28.316 13.6469 27.8581 13.5493 27.3252 13.5493C26.6721 13.5493 26.0754 13.7032 25.5349 14.0109C24.9944 14.3112 24.5591 14.7503 24.2288 15.3283C23.906 15.8988 23.7446 16.5894 23.7446 17.4001C23.7446 18.2183 23.9023 18.9088 24.2175 19.4718C24.5403 20.0273 24.9719 20.4476 25.5124 20.7329Z"
@@ -324,8 +557,8 @@
                 </svg>
               </i>contato@portaldomei.com.br
             </li>
-            <li class="footer__column-item footer__column-item--atendance">
-              <a href="./pontos-de-atendimento.html" class="flex ">
+            <li class="footer__column-item">
+              <a href="/atendimento.html">
                 <i class="footer__column-icon">
                   <svg xmlns="http://www.w3.org/2000/svg" width="14" height="15" viewBox="0 0 14 15" fill="none">
                     <path fill-rule="evenodd" clip-rule="evenodd"
@@ -336,7 +569,8 @@
                       fill="white" />
                   </svg>
                 </i>
-                Pontos de atendimento
+                Pontos de
+                atendimento
               </a>
             </li>
           </ul>
@@ -344,54 +578,42 @@
         <div class="footer__column">
           <h4 class="footer__column-title">Conteúdo</h4>
           <ul>
-            <li class="footer__column-item"><a href="https://blog.portaldomei.com.br" target="_blank">Blog</a></li>
-          </ul>
-        </div>
-        <div class="footer__column">
-          <h4 class="footer__column-title">Benefícios</h4>
-          <ul>
-            <li class="footer__column-item">
-              <a href="./cursos-exclusivos.html">Cursos exclusivos</a>
-            </li>
-            <li class="footer__column-item">
-              <a href="./clube-de-descontos.html">Clube de descontos</a>
-            </li>
+            <li class="footer__column-item"><a href="#">Blog</a></li>
           </ul>
         </div>
         <div class="footer__column">
           <h4 class="footer__column-title">Serviços</h4>
           <ul>
             <li class="footer__column-item">
-              <a href="./abrir-cnpj-mei.html">Abertura de CNPJ MEI</a>
+              <a href="/emissao-das.html">Emissão DAS</a>
             </li>
             <li class="footer__column-item">
-              <a href="./emissao-de-guia-das.html">Emissão de guia DAS</a>
+              <a href="/emissao-das.html">NF de serviço</a>
             </li>
             <li class="footer__column-item">
-              <a href="./notas-fiscais-de-produtos.html">Notas fiscais de produtos</a>
+              <a href="/nf-produto.html">NF de produto</a>
             </li>
             <li class="footer__column-item">
-              <a href="./notas-fiscais-de-servicos.html">Notas fiscais de serviços</a>
+              <a href="/financas-mei.html">Finanças MEI</a>
             </li>
             <li class="footer__column-item">
-              <a href="./financas-mei.html">Finanças MEI</a>
+              <a href="/declaracao-dasn.html">Declaração DASN</a>
             </li>
             <li class="footer__column-item">
-              <a href="./declaracao-anual-dasn.html">Declaração anual DASN</a>
+              <a href="#">Contabilidade</a>
             </li>
             <li class="footer__column-item">
-              <a href="./servicos-adicionais.html">Serviços adicionais</a>
+              <a href="/servicos-adicionais.html">Serviços adicionais</a>
             </li>
           </ul>
         </div>
         <div class="footer__column">
           <h4 class="footer__column-title">Institucional</h4>
           <ul>
-            <li class="footer__column-item"><a href="./quem-somos.html">Quem Somos</a></li>
-            <li class="footer__column-item"><a href="./faq.html">Dúvidas frequentes</a></li>
-            <li class="footer__column-item"><a href="./termos.html">Política de cookies</a></li>
-            <li class="footer__column-item"><a href="./termos.html">Termos de uso e privacidade</a></li>
-            <li class="footer__column-item"><a href="./pontos-de-atendimento.html">Pontos de atendimento</a></li>
+            <li class="footer__column-item"><a href="/quem-somos.html">Quem Somos</a></li>
+            <li class="footer__column-item"><a href="/faq.html">Dúvidas frequentes</a></li>
+            <li class="footer__column-item"><a href="/termos.html">Política de cookies</a></li>
+            <li class="footer__column-item"><a href="/termos.html">Termos de uso e privacidade</a></li>
           </ul>
         </div>
 
@@ -403,5 +625,6 @@
     </div>
   </footer>
 <script type="text/javascript" src="./js/portalmei-1.0.0.min.js"></script></body>
+
 
 </html>
