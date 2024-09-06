@@ -6,7 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portal Mei</title>
   <link rel="stylesheet" href="./css/reset.css">
-<link href="./css/portalmei-1.0.0.min.css" rel="stylesheet"></head>
+  <link href="./css/portalmei-1.0.0.min.css" rel="stylesheet">
+</head>
 
 
 <body>
@@ -220,7 +221,7 @@
                   <button class="register__submit button button--secondary" id="back-to-address" type="button">
                     Voltar
                   </button>
-                  <button class="button button--primary" id="go-to-payment">Continuar
+                  <button class="button button--primary" id="go-to-payment">Ir para pagamento
                     <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20" fill="none">
                       <path d="M4.66663 10H16.3333" stroke="#002C43" stroke-width="2" stroke-linecap="round"
                         stroke-linejoin="round" />
@@ -231,97 +232,6 @@
                 </div>
             </form>
           </section>
-          <div id="form-payment" style="display: none;">
-            <section class="checkout-form-content">
-              <h2>Pagamento via cartão de crédito</h2>
-              <h5>Escolha seu plano</h5>
-              <form action="" class="user__form" id="formPayment">
-                <div class="form-fields">
-                  <div class="form-requirements form-requirements--payments">
-                    <span>
-                      <input type="radio" id="plan1" value="mensal" name="plan" required>
-                      <label for="plan1">
-                        Assinatura mensal R$19,90 mês <br /> (Total ao ano de R$238,80)
-                      </label>
-                    </span>
-                    <span>
-                      <input type="radio" name="plan" value="anual" id="plan2" required>
-                      <label for="plan2">
-                        Assinatura anual R$179,00 <span class="melhor-escolha">Melhor Escolha</span>
-                    </span>
-                  </div>
-
-                  <fieldset>
-                    <label for="passwrod" class="user__label">Numero do cartão</label>
-                    <input required="true" autocomplete="new-password" type="number" id="cardNumber" class="user__input"
-                      name="cardNumber">
-                    <label for="cardName" class="user__label">Nome do titular do cartão</label>
-                    <input required="true" autocomplete="new-password" name="cardName" type="text" id="cardName"
-                      class="user__input">
-
-                    <div class="card-info">
-                      <div>
-                        <label for="expiryDate" class="user__label">MM/AA</label>
-                        <input placeholder="     /     " id="expiryDate" maxlength="5" required="true" name="expiryDate"
-                          autocomplete="new-password" type="text" class="user__input">
-
-                      </div>
-                      <div>
-                        <label for="cvv" class="user__label">CVV</label>
-                        <input required="true" maxlength="3" autocomplete="new-password" name="cvv" type="number"
-                          id="cvv" class="user__input">
-                      </div>
-                    </div>
-                  </fieldset>
-                  <button type="submit" id="finish-card"></button>
-              </form>
-            </section>
-            <section class="checkout-form-content resume">
-              <div>
-                <h2>Resumo</h2>
-                <h5 id="planName"></h5>
-                <p id="planDesc"></p>
-                <div class="price-resume">
-                  <span>Total</span>
-                  <div id="total"></div>
-                </div>
-                <p id="disclaimer-plan-mensal" style="display: none;">Pagamento recorrente. Uma nova cobrança será
-                  realizada de modo automático conforme plano escolhido</p>
-                <div class="checkout-form-footer">
-                  <button class="button button--primary" id="finish-payment">
-                    Efetuar Pagamento
-                  </button>
-                </div>
-              </div>
-              <div class="payment-other" id="payment-other" style="display: none;">
-                <h2>Outras opções de pagamento</h2>
-                <p>
-                  atenção exclusivo para assinatura no <b>plano anual</b>
-                </p>
-                <ul id="other-payments-options">
-                  <li>
-                    <img src="./img/card.png" alt="Card" />
-                    <span>
-                      Cartão de débito
-                    </span>
-                  </li>
-                  <li>
-                    <img src="./img/pix.png" alt="Pix" />
-                    <span>
-                      Pix
-                    </span>
-                  </li>
-                </ul>
-                <div class="bottom-payment-other">
-                  <p>
-                    você será redirecionado para o Pagarme. <br />
-                    Pagamento 100% seguro.
-                  </p>
-                  <img src="./img/pagarme.png" alt="Pagarme" />
-                </div>
-              </div>
-            </section>
-          </div>
         </div>
       </div>
     </section>
@@ -367,6 +277,7 @@
       </div>
     </div>
   </main>
-<script type="text/javascript" src="./js/portalmei-1.0.0.min.js"></script></body>
+  <script type="text/javascript" src="./js/portalmei-1.0.0.min.js"></script>
+</body>
 
 </html>
